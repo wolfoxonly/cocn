@@ -1,8 +1,8 @@
 /*
- * Qt4 DakeCoin GUI.
+ * Qt4 CloudComputingChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The DakeCoin Developers 2011-2013
+ * The CloudComputingChain Developers 2011-2013
  */
 #ifndef WALLETSTACK_H
 #define WALLETSTACK_H
@@ -11,7 +11,7 @@
 #include <QMap>
 #include <boost/shared_ptr.hpp>
 
-class DakeCoinGUI;
+class CloudComputingChainGUI;
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
@@ -44,7 +44,7 @@ public:
     explicit WalletStack(QWidget *parent = 0);
     ~WalletStack();
 
-    void setDakeCoinGUI(DakeCoinGUI *gui) { this->gui = gui; }
+    void setCloudComputingChainGUI(CloudComputingChainGUI *gui) { this->gui = gui; }
 
     void setClientModel(ClientModel *clientModel) { this->clientModel = clientModel; }
 
@@ -58,7 +58,7 @@ public:
     void showOutOfSyncWarning(bool fShow);
 
 private:
-    DakeCoinGUI *gui;
+    CloudComputingChainGUI *gui;
     ClientModel *clientModel;
     QMap<QString, WalletView*> mapWalletViews;
 

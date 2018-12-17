@@ -1,5 +1,5 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2017 The DakeCoin Core developers
+// Copyright (c) 2009-2017 The CloudComputingChain Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +7,7 @@
 #define BITCOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include <DakeCoin-config.h>
+#include <CloudComputingChain-config.h>
 #endif
 
 #ifdef WIN32

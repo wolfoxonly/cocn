@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The DakeCoin developers
-// Copyright (c) 2011-2017 The DakeCoin developers
+// Copyright (c) 2009-2012 The CloudComputingChain developers
+// Copyright (c) 2011-2017 The CloudComputingChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_WALLET_H

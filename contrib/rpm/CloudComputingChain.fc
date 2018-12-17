@@ -1,0 +1,8 @@
+/usr/bin/CloudComputingChain-cli		--	gen_context(system_u:object_r:CloudComputingChain_exec_t,s0)
+/usr/sbin/CloudComputingChaind		--	gen_context(system_u:object_r:CloudComputingChain_exec_t,s0)
+/usr/lib(64)?/CloudComputingChain/CloudComputingChaind		--	gen_context(system_u:object_r:CloudComputingChain_exec_t,s0)
+
+/etc/CloudComputingChain(/.*)?		gen_context(system_u:object_r:CloudComputingChain_conf_t,s0)
+/var/lib/CloudComputingChain(/.*)?		gen_context(system_u:object_r:CloudComputingChain_var_lib_t,s0)
+
+(/var)?/run/CloudComputingChaind(/.*)?   gen_context(system_u:object_r:CloudComputingChain_var_run_t,s0)

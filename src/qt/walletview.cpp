@@ -1,11 +1,11 @@
 /*
- * Qt4 DakeCoin GUI.
+ * Qt4 CloudComputingChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The DakeCoin Developers 2011-2013
+ * The CloudComputingChain Developers 2011-2013
  */
 #include "walletview.h"
-#include "DakeCoingui.h"
+#include "CloudComputingChaingui.h"
 #include "transactiontablemodel.h"
 #include "addressbookpage.h"
 #include "sendcoinsdialog.h"
@@ -27,7 +27,7 @@
 #include <QFileDialog>
 #include <QPushButton>
 
-WalletView::WalletView(QWidget *parent, DakeCoinGUI *_gui):
+WalletView::WalletView(QWidget *parent, CloudComputingChainGUI *_gui):
     QStackedWidget(parent),
     gui(_gui),
     clientModel(0),
@@ -95,7 +95,7 @@ WalletView::~WalletView()
 {
 }
 
-void WalletView::setDakeCoinGUI(DakeCoinGUI *gui)
+void WalletView::setCloudComputingChainGUI(CloudComputingChainGUI *gui)
 {
     this->gui = gui;
 }

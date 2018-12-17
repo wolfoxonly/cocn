@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The DakeCoin Core developers
+# Copyright (c) 2014-2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test longpolling with getblocktemplate."""
 
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import *
 
 import threading
@@ -22,7 +22,7 @@ class LongpollThread(threading.Thread):
     def run(self):
         self.node.getblocktemplate({'longpollid':self.longpollid})
 
-class GetBlockTemplateLPTest(DakeCoinTestFramework):
+class GetBlockTemplateLPTest(CloudComputingChainTestFramework):
     def set_test_params(self):
         self.num_nodes = 2
 

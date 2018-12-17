@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017 The DakeCoin Core developers
+# Copyright (c) 2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test that the wallet can send and receive using all combinations of address types.
@@ -29,10 +29,10 @@ this also verifies that spending coins sent to all these address types works."""
 from decimal import Decimal
 import itertools
 
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import assert_equal, assert_greater_than, connect_nodes_bi, sync_blocks, sync_mempools
 
-class AddressTypeTest(DakeCoinTestFramework):
+class AddressTypeTest(CloudComputingChainTestFramework):
     def set_test_params(self):
         self.num_nodes = 5
         self.extra_args = [["-addresstype=legacy"], ["-addresstype=p2sh-segwit"], ["-addresstype=p2sh-segwit", "-changetype=bech32"], ["-addresstype=bech32"], []]

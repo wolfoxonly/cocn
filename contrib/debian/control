@@ -1,4 +1,4 @@
-Source: DakeCoin
+Source: CloudComputingChain
 Section: utils
 Priority: optional
 Maintainer: Matt Corallo <matt@mattcorallo.com>
@@ -27,44 +27,44 @@ Build-Depends: debhelper,
  libzmq3-dev
 Standards-Version: 3.9.2
 Homepage: https://bitcoincore.org/
-Vcs-Git: git://github.com/DakeCoin/DakeCoin.git
-Vcs-Browser: https://github.com/DakeCoin/DakeCoin
+Vcs-Git: git://github.com/CloudComputingChain/CloudComputingChain.git
+Vcs-Browser: https://github.com/CloudComputingChain/CloudComputingChain
 
-Package: DakeCoind
+Package: CloudComputingChaind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- DakeCoin is a free open source peer-to-peer electronic cash system that
+ CloudComputingChain is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides the daemon, DakeCoind, and the CLI tool
- DakeCoin-cli to interact with the daemon.
+ This package provides the daemon, CloudComputingChaind, and the CLI tool
+ CloudComputingChain-cli to interact with the daemon.
 
-Package: DakeCoin-qt
+Package: CloudComputingChain-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- DakeCoin is a free open source peer-to-peer electronic cash system that
+ CloudComputingChain is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides DakeCoin-Qt, a GUI for DakeCoin based on Qt.
+ This package provides CloudComputingChain-Qt, a GUI for CloudComputingChain based on Qt.
 
-Package: DakeCoin-tx
+Package: CloudComputingChain-tx
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer digital currency - standalone transaction tool
- DakeCoin is a free open source peer-to-peer electronic cash system that
+ CloudComputingChain is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
  check for double-spending.
  .
- This package provides DakeCoin-tx, a command-line transaction creation
- tool which can be used without a DakeCoin daemon.  Some means of
+ This package provides CloudComputingChain-tx, a command-line transaction creation
+ tool which can be used without a CloudComputingChain daemon.  Some means of
  exchanging minimal transaction data with peers is still required.

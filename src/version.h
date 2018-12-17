@@ -1,5 +1,5 @@
-// Copyright (c) 2012 The DakeCoin developers
-// Copyright (c) 2012-2017 The DakeCoin developers
+// Copyright (c) 2012 The CloudComputingChain developers
+// Copyright (c) 2012-2017 The CloudComputingChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_VERSION_H
@@ -35,7 +35,7 @@ static const int DAKECOIN_VERSION =
 static const int PROTOCOL_VERSION = 70001;
 
 // earlier versions not supported as of Feb 2012, and are disconnected
-// NOTE: as of DakeCoin v0.6 message serialization (vSend, vRecv) still
+// NOTE: as of CloudComputingChain v0.6 message serialization (vSend, vRecv) still
 // uses MIN_PROTO_VERSION(209), where message format uses PROTOCOL_VERSION
 static const int MIN_PROTO_VERSION = 209;
 

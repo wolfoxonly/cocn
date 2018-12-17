@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The DakeCoin Core developers
+# Copyright (c) 2014-2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test the getchaintips RPC.
@@ -10,10 +10,10 @@
 - verify that getchaintips now returns two chain tips.
 """
 
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import assert_equal
 
-class GetChainTipsTest (DakeCoinTestFramework):
+class GetChainTipsTest (CloudComputingChainTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
 

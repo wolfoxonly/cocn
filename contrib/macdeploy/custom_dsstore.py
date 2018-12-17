@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# Copyright (c) 2013-2016 The DakeCoin Core developers
+# Copyright (c) 2013-2016 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 from __future__ import division,print_function,unicode_literals
@@ -45,8 +45,8 @@ alias = Alias.from_bytes(icvp['backgroundImageAlias'])
 alias.volume.name = package_name_ns
 alias.volume.posix_path = '/Volumes/' + package_name_ns
 alias.volume.disk_image_alias.target.filename = package_name_ns + '.temp.dmg'
-alias.volume.disk_image_alias.target.carbon_path = 'Macintosh HD:Users:\x00DakeCoinuser:\x00Documents:\x00DakeCoin:\x00DakeCoin:\x00' + package_name_ns + '.temp.dmg'
-alias.volume.disk_image_alias.target.posix_path = 'Users/DakeCoinuser/Documents/DakeCoin/DakeCoin/' + package_name_ns + '.temp.dmg'
+alias.volume.disk_image_alias.target.carbon_path = 'Macintosh HD:Users:\x00CloudComputingChainuser:\x00Documents:\x00CloudComputingChain:\x00CloudComputingChain:\x00' + package_name_ns + '.temp.dmg'
+alias.volume.disk_image_alias.target.posix_path = 'Users/CloudComputingChainuser/Documents/CloudComputingChain/CloudComputingChain/' + package_name_ns + '.temp.dmg'
 alias.target.carbon_path = package_name_ns + ':.background:\x00background.tiff'
 icvp['backgroundImageAlias'] = biplist.Data(alias.to_bytes())
 ds['.']['icvp'] = icvp
@@ -54,7 +54,7 @@ ds['.']['icvp'] = icvp
 ds['.']['vSrn'] = ('long', 1)
 
 ds['Applications']['Iloc'] = (370, 156)
-ds['DakeCoin-Qt.app']['Iloc'] = (128, 156)
+ds['CloudComputingChain-Qt.app']['Iloc'] = (128, 156)
 
 ds.flush()
 ds.close()

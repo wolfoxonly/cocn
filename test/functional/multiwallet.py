@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-# Copyright (c) 2017 The DakeCoin Core developers
+# Copyright (c) 2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test multiwallet.
 
-Verify that a DakeCoind node can load multiple wallet files
+Verify that a CloudComputingChaind node can load multiple wallet files
 """
 import os
 import shutil
 
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import assert_equal, assert_raises_rpc_error
 
-class MultiWalletTest(DakeCoinTestFramework):
+class MultiWalletTest(CloudComputingChainTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

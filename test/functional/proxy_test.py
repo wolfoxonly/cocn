@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2017 The DakeCoin Core developers
+# Copyright (c) 2015-2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test DakeCoind with different proxy configuration.
+"""Test CloudComputingChaind with different proxy configuration.
 
 Test plan:
-- Start DakeCoind's with different proxy configurations
+- Start CloudComputingChaind's with different proxy configurations
 - Use addnode to initiate connections
 - Verify that proxies are connected to, and the right connection command is given
-- Proxy configurations to test on DakeCoind side:
+- Proxy configurations to test on CloudComputingChaind side:
     - `-proxy` (proxy everything)
     - `-onion` (proxy just onions)
     - `-proxyrandomize` Circuit randomization
@@ -18,8 +18,8 @@ Test plan:
     - proxy on IPv6
 
 - Create various proxies (as threads)
-- Create DakeCoinds that connect to them
-- Manipulate the DakeCoinds using addnode (onetry) an observe effects
+- Create CloudComputingChainds that connect to them
+- Manipulate the CloudComputingChainds using addnode (onetry) an observe effects
 
 addnode connect to IPv4
 addnode connect to IPv6
@@ -31,7 +31,7 @@ import socket
 import os
 
 from test_framework.socks5 import Socks5Configuration, Socks5Command, Socks5Server, AddressType
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import (
     PORT_MIN,
     PORT_RANGE,
@@ -41,7 +41,7 @@ from test_framework.netutil import test_ipv6_local
 
 RANGE_BEGIN = PORT_MIN + 2 * PORT_RANGE  # Start after p2p and rpc ports
 
-class ProxyTest(DakeCoinTestFramework):
+class ProxyTest(CloudComputingChainTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
 
@@ -95,7 +95,7 @@ class ProxyTest(DakeCoinTestFramework):
         node.addnode("15.61.23.23:1234", "onetry")
         cmd = proxies[0].queue.get()
         assert(isinstance(cmd, Socks5Command))
-        # Note: DakeCoind's SOCKS5 implementation only sends atyp DOMAINNAME, even if connecting directly to IPv4/IPv6
+        # Note: CloudComputingChaind's SOCKS5 implementation only sends atyp DOMAINNAME, even if connecting directly to IPv4/IPv6
         assert_equal(cmd.atyp, AddressType.DOMAINNAME)
         assert_equal(cmd.addr, b"15.61.23.23")
         assert_equal(cmd.port, 1234)
@@ -109,7 +109,7 @@ class ProxyTest(DakeCoinTestFramework):
             node.addnode("[1233:3432:2434:2343:3234:2345:6546:4534]:5443", "onetry")
             cmd = proxies[1].queue.get()
             assert(isinstance(cmd, Socks5Command))
-            # Note: DakeCoind's SOCKS5 implementation only sends atyp DOMAINNAME, even if connecting directly to IPv4/IPv6
+            # Note: CloudComputingChaind's SOCKS5 implementation only sends atyp DOMAINNAME, even if connecting directly to IPv4/IPv6
             assert_equal(cmd.atyp, AddressType.DOMAINNAME)
             assert_equal(cmd.addr, b"1233:3432:2434:2343:3234:2345:6546:4534")
             assert_equal(cmd.port, 5443)
@@ -120,11 +120,11 @@ class ProxyTest(DakeCoinTestFramework):
 
         if test_onion:
             # Test: outgoing onion connection through node
-            node.addnode("DakeCoinostk4e4re.onion:8333", "onetry")
+            node.addnode("CloudComputingChainostk4e4re.onion:8333", "onetry")
             cmd = proxies[2].queue.get()
             assert(isinstance(cmd, Socks5Command))
             assert_equal(cmd.atyp, AddressType.DOMAINNAME)
-            assert_equal(cmd.addr, b"DakeCoinostk4e4re.onion")
+            assert_equal(cmd.addr, b"CloudComputingChainostk4e4re.onion")
             assert_equal(cmd.port, 8333)
             if not auth:
                 assert_equal(cmd.username, None)

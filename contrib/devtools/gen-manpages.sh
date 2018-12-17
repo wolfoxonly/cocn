@@ -4,10 +4,10 @@ TOPDIR=${TOPDIR:-$(git rev-parse --show-toplevel)}
 SRCDIR=${SRCDIR:-$TOPDIR/src}
 MANDIR=${MANDIR:-$TOPDIR/doc/man}
 
-BITCOIND=${BITCOIND:-$SRCDIR/DakeCoind}
-BITCOINCLI=${BITCOINCLI:-$SRCDIR/DakeCoin-cli}
-BITCOINTX=${BITCOINTX:-$SRCDIR/DakeCoin-tx}
-BITCOINQT=${BITCOINQT:-$SRCDIR/qt/DakeCoin-qt}
+BITCOIND=${BITCOIND:-$SRCDIR/CloudComputingChaind}
+BITCOINCLI=${BITCOINCLI:-$SRCDIR/CloudComputingChain-cli}
+BITCOINTX=${BITCOINTX:-$SRCDIR/CloudComputingChain-tx}
+BITCOINQT=${BITCOINQT:-$SRCDIR/qt/CloudComputingChain-qt}
 
 [ ! -x $BITCOIND ] && echo "$BITCOIND not found or not executable." && exit 1
 
@@ -15,8 +15,8 @@ BITCOINQT=${BITCOINQT:-$SRCDIR/qt/DakeCoin-qt}
 BTCVER=($($BITCOINCLI --version | head -n1 | awk -F'[ -]' '{ print $6, $7 }'))
 
 # Create a footer file with copyright content.
-# This gets autodetected fine for DakeCoind if --version-string is not set,
-# but has different outcomes for DakeCoin-qt and DakeCoin-cli.
+# This gets autodetected fine for CloudComputingChaind if --version-string is not set,
+# but has different outcomes for CloudComputingChain-qt and CloudComputingChain-cli.
 echo "[COPYRIGHT]" > footer.h2m
 $BITCOIND --version | sed -n '1!p' >> footer.h2m
 

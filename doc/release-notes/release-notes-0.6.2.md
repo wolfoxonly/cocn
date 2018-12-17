@@ -1,10 +1,10 @@
-DakeCoin version 0.6.2 is now available for download at:
-http://sourceforge.net/projects/DakeCoin/files/DakeCoin/DakeCoin-0.6.2/
+CloudComputingChain version 0.6.2 is now available for download at:
+http://sourceforge.net/projects/CloudComputingChain/files/CloudComputingChain/CloudComputingChain-0.6.2/
 
 This is a bug-fix and code-cleanup release, with no major new features.
 
 Please report bugs using the github issue tracker at:
-https://github.com/DakeCoin/DakeCoin/issues
+https://github.com/CloudComputingChain/CloudComputingChain/issues
 
 
 NOTABLE CHANGES
@@ -14,7 +14,7 @@ portable to different data directories by default. If you need a
 portable blkindex.dat file then run with the new -detachdb=1 option
 or the "Detach databases at shutdown" GUI preference.
 
-Fixed https://github.com/DakeCoin/DakeCoin/issues/1065, a bug that
+Fixed https://github.com/CloudComputingChain/CloudComputingChain/issues/1065, a bug that
 could cause long-running nodes to crash.
 
 Mac and Windows binaries are compiled against OpenSSL 1.0.1b (Linux

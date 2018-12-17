@@ -1,19 +1,19 @@
-Binaries for DakeCoin version 0.3.21 are available at:
-  https://sourceforge.net/projects/DakeCoin/files/DakeCoin/DakeCoin-0.3.21/
+Binaries for CloudComputingChain version 0.3.21 are available at:
+  https://sourceforge.net/projects/CloudComputingChain/files/CloudComputingChain/CloudComputingChain-0.3.21/
 
 Changes and new features from the 0.3.20 release include:
 
-* Universal Plug and Play support.  Enable automatic opening of a port for incoming connections by running DakeCoin or DakeCoind with the - -upnp=1 command line switch or using the Options dialog box.
+* Universal Plug and Play support.  Enable automatic opening of a port for incoming connections by running CloudComputingChain or CloudComputingChaind with the - -upnp=1 command line switch or using the Options dialog box.
 
-* Support for full-precision DakeCoin amounts.  You can now send, and DakeCoin will display, DakeCoin amounts smaller than 0.01.  However, sending fewer than 0.01 DakeCoins still requires a 0.01 DakeCoin fee (so you can send 1.0001 DakeCoins without a fee, but you will be asked to pay a fee if you try to send 0.0001).
+* Support for full-precision CloudComputingChain amounts.  You can now send, and CloudComputingChain will display, CloudComputingChain amounts smaller than 0.01.  However, sending fewer than 0.01 CloudComputingChains still requires a 0.01 CloudComputingChain fee (so you can send 1.0001 CloudComputingChains without a fee, but you will be asked to pay a fee if you try to send 0.0001).
 
-* A new method of finding DakeCoin nodes to connect with, via DNS A records. Use the -dnsseed option to enable.
+* A new method of finding CloudComputingChain nodes to connect with, via DNS A records. Use the -dnsseed option to enable.
 
-For developers, changes to DakeCoin's remote-procedure-call API:
+For developers, changes to CloudComputingChain's remote-procedure-call API:
 
-* New rpc command "sendmany" to send DakeCoins to more than one address in a single transaction.
+* New rpc command "sendmany" to send CloudComputingChains to more than one address in a single transaction.
 
-* Several bug fixes, including a serious intermittent bug that would sometimes cause DakeCoind to stop accepting rpc requests. 
+* Several bug fixes, including a serious intermittent bug that would sometimes cause CloudComputingChaind to stop accepting rpc requests. 
 
 * -logtimestamps option, to add a timestamp to each line in debug.log.
 

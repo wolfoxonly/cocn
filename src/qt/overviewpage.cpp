@@ -3,7 +3,7 @@
 
 #include "clientmodel.h"
 #include "walletmodel.h"
-#include "DakeCoinunits.h"
+#include "CloudComputingChainunits.h"
 #include "optionsmodel.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"
@@ -20,7 +20,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(DakeCoinUnits::BTC)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(CloudComputingChainUnits::BTC)
     {
 
     }
@@ -68,7 +68,7 @@ public:
         painter->setPen(foreground);
         font.setPixelSize(14);
         painter->setFont(font);
-        QString amountText = DakeCoinUnits::formatWithUnit(unit, amount, true);
+        QString amountText = CloudComputingChainUnits::formatWithUnit(unit, amount, true);
         if(!confirmed)
         {
             amountText = QString("[") + amountText + QString("]");
@@ -139,12 +139,12 @@ void OverviewPage::setBalance(qint64 balance, qint64 stake, qint64 unconfirmedBa
     currentStake = stake;
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
-    ui->labelBalance->setText(DakeCoinUnits::formatWithUnit(unit, balance, false, false));
-    ui->labelUnconfirmed->setText(DakeCoinUnits::formatWithUnit(unit, unconfirmedBalance, false, false));
-    ui->labelImmature->setText(DakeCoinUnits::formatWithUnit(unit, stake + immatureBalance, false, false));
+    ui->labelBalance->setText(CloudComputingChainUnits::formatWithUnit(unit, balance, false, false));
+    ui->labelUnconfirmed->setText(CloudComputingChainUnits::formatWithUnit(unit, unconfirmedBalance, false, false));
+    ui->labelImmature->setText(CloudComputingChainUnits::formatWithUnit(unit, stake + immatureBalance, false, false));
 
     qint64 total = balance + stake + unconfirmedBalance + immatureBalance;
-    ui->labelTotal->setText(DakeCoinUnits::formatWithUnit(unit, total, false, false));
+    ui->labelTotal->setText(CloudComputingChainUnits::formatWithUnit(unit, total, false, false));
 
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users

@@ -8,7 +8,7 @@ if [ -z "${1}" ]; then
   echo "Usage: ./install_db4.sh <base-dir> [<extra-bdb-configure-flag> ...]"
   echo
   echo "Must specify a single argument: the directory in which db4 will be built."
-  echo "This is probably \`pwd\` if you're at the root of the DakeCoin repository."
+  echo "This is probably \`pwd\` if you're at the root of the CloudComputingChain repository."
   exit 1
 fi
 
@@ -80,7 +80,7 @@ make install
 echo
 echo "db4 build complete."
 echo
-echo 'When compiling DakeCoind, run `./configure` in the following way:'
+echo 'When compiling CloudComputingChaind, run `./configure` in the following way:'
 echo
 echo "  export BDB_PREFIX='${BDB_PREFIX}'"
 echo '  ./configure LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/" ...'

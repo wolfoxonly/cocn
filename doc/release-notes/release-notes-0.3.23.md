@@ -1,7 +1,7 @@
-Win32, Linux, MacOSX and source releases for DakeCoin v0.3.23 have been uploaded to
-https://sourceforge.net/projects/DakeCoin/files/DakeCoin/DakeCoin-0.3.23/
+Win32, Linux, MacOSX and source releases for CloudComputingChain v0.3.23 have been uploaded to
+https://sourceforge.net/projects/CloudComputingChain/files/CloudComputingChain/CloudComputingChain-0.3.23/
 
-This is another quick bugfix release, trying to deal with the influx of new DakeCoin users.
+This is another quick bugfix release, trying to deal with the influx of new CloudComputingChain users.
 
 Main items of note:
 

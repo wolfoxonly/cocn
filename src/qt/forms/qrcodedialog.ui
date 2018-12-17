@@ -140,7 +140,7 @@
          </widget>
         </item>
         <item row="0" column="1">
-         <widget class="DakeCoinAmountField" name="lnReqAmount">
+         <widget class="CloudComputingChainAmountField" name="lnReqAmount">
           <property name="enabled">
            <bool>false</bool>
           </property>
@@ -185,9 +185,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>DakeCoinAmountField</class>
+   <class>CloudComputingChainAmountField</class>
    <extends>QSpinBox</extends>
-   <header>DakeCoinamountfield.h</header>
+   <header>CloudComputingChainamountfield.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

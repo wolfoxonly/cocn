@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  CloudComputingChaind The CloudComputingChain core server.
+#
+#
+# chkconfig: 345 80 20
+# description: CloudComputingChaind
+# processname: CloudComputingChaind
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/CloudComputingChaind, see below
+if [ -f /etc/sysconfig/CloudComputingChaind ]; then
+        . /etc/sysconfig/CloudComputingChaind
+fi
+
+RETVAL=0
+
+prog=CloudComputingChaind
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/CloudComputingChaind
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/CloudComputingChaind}
+
+# CloudComputingChaind defaults to /usr/bin/CloudComputingChaind, override with BITCOIND_BIN
+CloudComputingChaind=${BITCOIND_BIN-/usr/bin/CloudComputingChaind}
+
+# CloudComputingChaind opts default to -disablewallet, override with BITCOIND_OPTS
+CloudComputingChaind_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $CloudComputingChaind $CloudComputingChaind_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About DakeCoin</string>
+   <string>About CloudComputingChain</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -23,7 +23,7 @@
       </sizepolicy>
      </property>
      <property name="pixmap">
-      <pixmap resource="../DakeCoin.qrc">:/images/about</pixmap>
+      <pixmap resource="../CloudComputingChain.qrc">:/images/about</pixmap>
      </property>
     </widget>
    </item>
@@ -50,7 +50,7 @@
           <cursorShape>IBeamCursor</cursorShape>
          </property>
          <property name="text">
-          <string>&lt;b&gt;DakeCoin&lt;/b&gt; version</string>
+          <string>&lt;b&gt;CloudComputingChain&lt;/b&gt; version</string>
          </property>
          <property name="textInteractionFlags">
           <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -86,12 +86,12 @@
       </layout>
      </item>
      <item>
-      <widget class="QLabel" name="DakeCoinCopyrightLabel">
+      <widget class="QLabel" name="CloudComputingChainCopyrightLabel">
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>Copyright &amp;copy; 2011-YYYY DakeCoin Developers</string>
+        <string>Copyright &amp;copy; 2011-YYYY CloudComputingChain Developers</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -102,12 +102,12 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="DakeCoinCopyrightLabel">
+      <widget class="QLabel" name="CloudComputingChainCopyrightLabel">
        <property name="cursor">
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string notr="true">Copyright &amp;copy; 2009-2013 DakeCoin Developers</string>
+        <string notr="true">Copyright &amp;copy; 2009-2013 CloudComputingChain Developers</string>
        </property>
        <property name="textFormat">
         <enum>Qt::RichText</enum>
@@ -166,7 +166,7 @@ This product includes software developed by the OpenSSL Project for use in the O
   </layout>
  </widget>
  <resources>
-  <include location="../DakeCoin.qrc"/>
+  <include location="../CloudComputingChain.qrc"/>
  </resources>
  <connections>
   <connection>

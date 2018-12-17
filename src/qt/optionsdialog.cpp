@@ -1,11 +1,11 @@
 #if defined(HAVE_CONFIG_H)
-#include "DakeCoin-config.h"
+#include "CloudComputingChain-config.h"
 #endif
 
 #include "optionsdialog.h"
 #include "ui_optionsdialog.h"
 
-#include "DakeCoinunits.h"
+#include "CloudComputingChainunits.h"
 #include "monitoreddatamapper.h"
 #include "netbase.h"
 #include "optionsmodel.h"
@@ -82,7 +82,7 @@ OptionsDialog::OptionsDialog(QWidget *parent) :
         }
     }
 
-    ui->unit->setModel(new DakeCoinUnits(this));
+    ui->unit->setModel(new CloudComputingChainUnits(this));
 
     /* Widget-to-option mapper */
     mapper = new MonitoredDataMapper(this);
@@ -122,7 +122,7 @@ void OptionsDialog::setModel(OptionsModel *model)
 void OptionsDialog::setMapper()
 {
     /* Main */
-    mapper->addMapping(ui->DakeCoinAtStartup, OptionsModel::StartAtStartup);
+    mapper->addMapping(ui->CloudComputingChainAtStartup, OptionsModel::StartAtStartup);
     mapper->addMapping(ui->checkpointEnforce, OptionsModel::CheckpointEnforce);
 
     /* Network */
@@ -222,7 +222,7 @@ void OptionsDialog::showRestartWarning_Proxy()
 {
     if(!fRestartWarningDisplayed_Proxy)
     {
-        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting DakeCoin."), QMessageBox::Ok);
+        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting CloudComputingChain."), QMessageBox::Ok);
         fRestartWarningDisplayed_Proxy = true;
     }
 }
@@ -231,7 +231,7 @@ void OptionsDialog::showRestartWarning_Lang()
 {
     if(!fRestartWarningDisplayed_Lang)
     {
-        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting DakeCoin."), QMessageBox::Ok);
+        QMessageBox::warning(this, tr("Warning"), tr("This setting will take effect after restarting CloudComputingChain."), QMessageBox::Ok);
         fRestartWarningDisplayed_Lang = true;
     }
 }

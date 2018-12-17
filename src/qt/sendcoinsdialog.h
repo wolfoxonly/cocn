@@ -14,7 +14,7 @@ QT_BEGIN_NAMESPACE
 class QUrl;
 QT_END_NAMESPACE
 
-/** Dialog for sending DakeCoins */
+/** Dialog for sending CloudComputingChains */
 class SendCoinsDialog : public QDialog
 {
     Q_OBJECT

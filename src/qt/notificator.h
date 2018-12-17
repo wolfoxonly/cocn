@@ -2,7 +2,7 @@
 #define NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "DakeCoin-config.h"
+#include "CloudComputingChain-config.h"
 #endif
 
 #include <QObject>

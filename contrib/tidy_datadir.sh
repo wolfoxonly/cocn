@@ -1,5 +1,5 @@
 #!/bin/bash
-# Copyright (c) 2013 The DakeCoin Core developers
+# Copyright (c) 2013 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -7,7 +7,7 @@ if [ -d "$1" ]; then
   cd "$1" || exit 1
 else
   echo "Usage: $0 <datadir>" >&2
-  echo "Removes obsolete DakeCoin database files" >&2
+  echo "Removes obsolete CloudComputingChain database files" >&2
   exit 1
 fi
 
@@ -19,22 +19,22 @@ if [ -f wallet.dat -a -f peers.dat -a -f chainstate/CURRENT -a -f blocks/index/C
 
 case $LEVEL in
   0)
-    echo "Error: no DakeCoin datadir detected."
+    echo "Error: no CloudComputingChain datadir detected."
     exit 1
     ;;
   1)
-    echo "Detected old DakeCoin datadir (before 0.7)."
+    echo "Detected old CloudComputingChain datadir (before 0.7)."
     echo "Nothing to do."
     exit 0
     ;;
   2)
-    echo "Detected DakeCoin 0.7 datadir."
+    echo "Detected CloudComputingChain 0.7 datadir."
     ;;
   3)
-    echo "Detected DakeCoin pre-0.8 datadir."
+    echo "Detected CloudComputingChain pre-0.8 datadir."
     ;;
   4)
-    echo "Detected DakeCoin 0.8 datadir."
+    echo "Detected CloudComputingChain 0.8 datadir."
     ;;
 esac
 

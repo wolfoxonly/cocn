@@ -50,7 +50,7 @@
     </widget>
    </item>
    <item row="5" column="1">
-    <widget class="DakeCoinAmountField" name="payAmount"/>
+    <widget class="CloudComputingChainAmountField" name="payAmount"/>
    </item>
    <item row="4" column="0">
     <widget class="QLabel" name="label_4">
@@ -89,7 +89,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="../DakeCoin.qrc">
+        <iconset resource="../CloudComputingChain.qrc">
          <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
        </property>
        <property name="shortcut">
@@ -106,7 +106,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="../DakeCoin.qrc">
+        <iconset resource="../CloudComputingChain.qrc">
          <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
        </property>
        <property name="shortcut">
@@ -123,7 +123,7 @@
         <string/>
        </property>
        <property name="icon">
-        <iconset resource="../DakeCoin.qrc">
+        <iconset resource="../CloudComputingChain.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
       </widget>
@@ -141,9 +141,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>DakeCoinAmountField</class>
+   <class>CloudComputingChainAmountField</class>
    <extends>QLineEdit</extends>
-   <header>DakeCoinamountfield.h</header>
+   <header>CloudComputingChainamountfield.h</header>
    <container>1</container>
   </customwidget>
   <customwidget>
@@ -153,7 +153,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../DakeCoin.qrc"/>
+  <include location="../CloudComputingChain.qrc"/>
  </resources>
  <connections/>
 </ui>

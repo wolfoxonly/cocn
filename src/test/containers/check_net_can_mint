@@ -6,7 +6,7 @@ node_names = %w( a b c d e )
 nodes = []
 node_names.each do |name|
   puts "Starting node #{name}"
-  nodes << CoinContainer.new(image: "DakeCoinnet/#{name}", links: nodes.map(&:name), args: {stakegen: true})
+  nodes << CoinContainer.new(image: "CloudComputingChainnet/#{name}", links: nodes.map(&:name), args: {stakegen: true})
 end
 
 puts "Waiting for all nodes to boot"

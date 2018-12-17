@@ -11,7 +11,7 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui->setupUi(this);
 
     // Set current copyright year
-    ui->DakeCoinCopyrightLabel->setText(tr("Copyright") + QString(" &copy; 2018-%1 ").arg(COPYRIGHT_YEAR) + tr("DakeCoin Developers"));
+    ui->CloudComputingChainCopyrightLabel->setText(tr("Copyright") + QString(" &copy; 2018-%1 ").arg(COPYRIGHT_YEAR) + tr("CloudComputingChain Developers"));
 }
 
 void AboutDialog::setModel(ClientModel *model)

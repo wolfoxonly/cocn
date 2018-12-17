@@ -1,23 +1,23 @@
 
-DakeCoin Official Development Repo
+CloudComputingChain Official Development Repo
 ==================================
 
 
 
 
 
-### What is DakeCoin?
-[DakeCoin](https://DakeCoin.net) (abbreviated PPC), also known as PPCoin and Peer-to-Peer Coin is the first [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) design introducing [proof-of-stake consensus](https://DakeCoin.net/assets/paper/DakeCoin-paper.pdf) as a security model, with a combined [proof-of-stake](https://DakeCoin.net/assets/paper/DakeCoin-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. DakeCoin is based on [DakeCoin](https://DakeCoin.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
+### What is CloudComputingChain?
+[CloudComputingChain](https://CloudComputingChain.net) (abbreviated PPC), also known as PPCoin and Peer-to-Peer Coin is the first [cryptocurrency](https://en.wikipedia.org/wiki/Cryptocurrency) design introducing [proof-of-stake consensus](https://CloudComputingChain.net/assets/paper/CloudComputingChain-paper.pdf) as a security model, with a combined [proof-of-stake](https://CloudComputingChain.net/assets/paper/CloudComputingChain-paper.pdf)/[proof-of-work](https://en.wikipedia.org/wiki/Proof-of-work_system) minting system. CloudComputingChain is based on [CloudComputingChain](https://CloudComputingChain.org), while introducing many important innovations to cryptocurrency field including new security model, energy efficiency, better minting model and more adaptive response to rapid change in network computation power.
 
-### DakeCoin Resources
+### CloudComputingChain Resources
 * Client and Source:
-[Client Binaries](https://DakeCoin.net/download),
-[Source Code](https://github.com/DakeCoin/DakeCoin)
-* Documentation: [DakeCoin Whitepaper](https://DakeCoin.net/whitepaper),
-[DakeCoin Wiki](https://github.com/DakeCoin/DakeCoin/wiki)
+[Client Binaries](https://CloudComputingChain.net/download),
+[Source Code](https://github.com/CloudComputingChain/CloudComputingChain)
+* Documentation: [CloudComputingChain Whitepaper](https://CloudComputingChain.net/whitepaper),
+[CloudComputingChain Wiki](https://github.com/CloudComputingChain/CloudComputingChain/wiki)
 * Help: 
-[Forum](https://talk.DakeCoin.net),
-[Intro & Important Links](https://talk.DakeCoin.net/t/what-is-DakeCoin-intro-important-links/2889)
+[Forum](https://talk.CloudComputingChain.net),
+[Intro & Important Links](https://talk.CloudComputingChain.net/t/what-is-CloudComputingChain-intro-important-links/2889)
 
 Testing
 -------
@@ -38,7 +38,7 @@ Unit tests can be compiled and run (assuming they weren't disabled in configure)
 Every pull request is built for both Windows and Linux on a dedicated server,
 and unit and sanity tests are automatically run. The binaries produced may be
 used for manual QA testing — a link to them will appear in a comment on the
-pull request posted by [DakeCoinPullTester](https://github.com/DakeCoinPullTester). See https://github.com/TheBlueMatt/test-scripts
+pull request posted by [CloudComputingChainPullTester](https://github.com/CloudComputingChainPullTester). See https://github.com/TheBlueMatt/test-scripts
 for the build/test scripts.
 
 ### Manual Quality Assurance (QA) Testing
@@ -48,10 +48,10 @@ than the developer who wrote the code.
 
 * Developers work in their own forks, then submit pull requests when they think their feature or bug fix is ready.
 * If it is a simple/trivial/non-controversial change, then one of the development team members simply pulls it.
-* If it is a more complicated or potentially controversial change, then the change may be discussed in the pull request, or the requester may be asked to start a discussion in the [DakeCoin Forum](https://talk.DakeCoin.net) for a broader community discussion. 
+* If it is a more complicated or potentially controversial change, then the change may be discussed in the pull request, or the requester may be asked to start a discussion in the [CloudComputingChain Forum](https://talk.CloudComputingChain.net) for a broader community discussion. 
 * The patch will be accepted if there is broad consensus that it is a good thing. Developers should expect to rework and resubmit patches if they don't match the project's coding conventions (see coding.txt) or are controversial.
 * From time to time a pull request will become outdated. If this occurs, and the pull is no longer automatically mergeable; a comment on the pull will be used to issue a warning of closure.  Pull requests closed in this manner will have their corresponding issue labeled 'stagnant'.
-* For development ideas and help see [here](https://talk.DakeCoin.net/c/protocol).
+* For development ideas and help see [here](https://talk.CloudComputingChain.net/c/protocol).
 
 ## Branches:
 

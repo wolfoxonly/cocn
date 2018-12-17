@@ -1,11 +1,11 @@
 /*
- * Qt4 DakeCoin GUI.
+ * Qt4 CloudComputingChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The DakeCoin Developers 2011-2013
+ * The CloudComputingChain Developers 2011-2013
  */
 #include "walletframe.h"
-#include "DakeCoingui.h"
+#include "CloudComputingChaingui.h"
 #include "walletstack.h"
 
 #include <QVBoxLayout>
@@ -13,7 +13,7 @@
 
 #include <stdio.h>
 
-WalletFrame::WalletFrame(DakeCoinGUI *_gui) :
+WalletFrame::WalletFrame(CloudComputingChainGUI *_gui) :
     QFrame(_gui),
     gui(_gui),
     clientModel(0)
@@ -22,7 +22,7 @@ WalletFrame::WalletFrame(DakeCoinGUI *_gui) :
     QHBoxLayout *walletFrameLayout = new QHBoxLayout(this);
     setContentsMargins(0,0,0,0);
     walletStack = new WalletStack(this);
-    walletStack->setDakeCoinGUI(gui);
+    walletStack->setCloudComputingChainGUI(gui);
     walletFrameLayout->setContentsMargins(0,0,0,0);
     walletFrameLayout->addWidget(walletStack);
 }

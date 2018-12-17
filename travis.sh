@@ -12,7 +12,7 @@ export TRAVIS_JOB_NUMBER=JobNo.1
 
 # Matrix
 #matrix="Win32Gui"
-matrix="DakeCoind"
+matrix="CloudComputingChaind"
 #matrix="Cross-Mac"
 
 # For `matrix="Cross-Mac"'
@@ -87,8 +87,8 @@ elif [ "$matrix" = "Cross-Mac" ]; then
 	export GOAL="deploy"
 	export BITCOIN_CONFIG="--disable-debug --disable-bench --enable-gui --disable-tests --enable-reduce-exports"
 
-# DakeCoind
-elif [ "$matrix" = "DakeCoind" ]; then
+# CloudComputingChaind
+elif [ "$matrix" = "CloudComputingChaind" ]; then
 	export HOST=x86_64-unknown-linux-gnu 
 	export PACKAGES="bc python3-zmq" 
 	export DEP_OPTS="NO_QT=1 NO_UPNP=1" 

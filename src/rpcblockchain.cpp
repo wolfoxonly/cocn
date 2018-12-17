@@ -1,5 +1,5 @@
 // Copyright (c) 2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The DakeCoin developers
+// Copyright (c) 2009-2012 The CloudComputingChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -163,7 +163,7 @@ Value getblock(const Array& params, bool fHelp)
     if (fHelp || params.size() < 1 || params.size() > 3)
         throw runtime_error(
             "getblock <hash> [verbose] [txinfo]\n"
-            "verbose optional (default true) if false output hash like DakeCoin-cli\n"
+            "verbose optional (default true) if false output hash like CloudComputingChain-cli\n"
             "txinfo optional to print more detailed tx info\n"
             "Returns details of a block with given block-hash.");
 
@@ -181,7 +181,7 @@ Value getblock(const Array& params, bool fHelp)
     if (params.size() > 2)
       fTxinfo = params[2].get_bool();
 
-    // DakeCoin-cli verbose=0 support
+    // CloudComputingChain-cli verbose=0 support
     bool fVerbose = true;
     if (params.size() > 1)
       fVerbose = params[1].get_bool();

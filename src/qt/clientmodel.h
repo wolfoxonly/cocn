@@ -20,7 +20,7 @@ enum BlockSource {
     BLOCK_SOURCE_NETWORK
 };
 
-/** Model for DakeCoin network client. */
+/** Model for CloudComputingChain network client. */
 class ClientModel : public QObject
 {
     Q_OBJECT

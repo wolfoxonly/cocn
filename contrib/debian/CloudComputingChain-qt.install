@@ -1,0 +1,6 @@
+usr/local/bin/CloudComputingChain-qt usr/bin
+share/pixmaps/CloudComputingChain32.xpm usr/share/pixmaps
+share/pixmaps/CloudComputingChain16.xpm usr/share/pixmaps
+share/pixmaps/CloudComputingChain128.png usr/share/pixmaps
+debian/CloudComputingChain-qt.desktop usr/share/applications
+debian/CloudComputingChain-qt.protocol usr/share/kde4/services/

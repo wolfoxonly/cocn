@@ -3,7 +3,7 @@
 
 #include <QAbstractListModel>
 
-/** Interface from Qt to configuration data structure for DakeCoin client.
+/** Interface from Qt to configuration data structure for CloudComputingChain client.
    To Qt, the options are presented as a list with the different options
    laid out vertically.
    This can be changed to a tree once the settings become sufficiently
@@ -25,7 +25,7 @@ public:
         ProxyIP,           // QString
         ProxyPort,         // int
         ProxySocksVersion, // int
-        DisplayUnit,       // DakeCoinUnits::Unit
+        DisplayUnit,       // CloudComputingChainUnits::Unit
         DisplayAddresses,  // bool
         Language,          // QString
         CoinControlFeatures, // bool

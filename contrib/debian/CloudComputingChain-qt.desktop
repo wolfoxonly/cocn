@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=CloudComputingChain Core
+Comment=Connect to the CloudComputingChain P2P Network
+Comment[de]=Verbinde mit dem CloudComputingChain peer-to-peer Netzwerk
+Comment[fr]=CloudComputingChain, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=CloudComputingChain, eşten eşe kriptografik sanal para birimi
+Exec=CloudComputingChain-qt %u
+Terminal=false
+Type=Application
+Icon=CloudComputingChain128
+MimeType=x-scheme-handler/CloudComputingChain;
+Categories=Office;Finance;
+StartupWMClass=CloudComputingChain-qt

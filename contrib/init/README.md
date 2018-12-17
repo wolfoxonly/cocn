@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-SystemD: DakeCoind.service
-Upstart: DakeCoind.conf
-OpenRC:  DakeCoind.openrc
-         DakeCoind.openrcconf
-CentOS:  DakeCoind.init
-OS X:    org.DakeCoin.DakeCoind.plist
+SystemD: CloudComputingChaind.service
+Upstart: CloudComputingChaind.conf
+OpenRC:  CloudComputingChaind.openrc
+         CloudComputingChaind.openrcconf
+CentOS:  CloudComputingChaind.init
+OS X:    org.CloudComputingChain.CloudComputingChaind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

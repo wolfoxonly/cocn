@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven DakeCoin tests.
+Utilities to generate test vectors for the data-driven CloudComputingChain tests.
 
 Usage: 
 

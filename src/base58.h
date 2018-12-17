@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The DakeCoin Developers
-// Copyright (c) 2011-2017 The DakeCoin developers
+// Copyright (c) 2009-2012 The CloudComputingChain Developers
+// Copyright (c) 2011-2017 The CloudComputingChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -250,25 +250,25 @@ public:
     bool operator> (const CBase58Data& b58) const { return CompareTo(b58) >  0; }
 };
 
-/** base58-encoded DakeCoin addresses.
+/** base58-encoded CloudComputingChain addresses.
  * ppcoin public-key-hash-addresses have version 55 (or 111 testnet).
  * The data vector contains RIPEMD160(SHA256(pubkey)), where pubkey is the serialized public key.
  * Script-hash-addresses have version 117 (or 196 testnet).
  * The data vector contains RIPEMD160(SHA256(cscript)), where cscript is the serialized redemption script.
  */
-class CDakeCoinAddress;
-class CDakeCoinAddressVisitor : public boost::static_visitor<bool>
+class CCloudComputingChainAddress;
+class CCloudComputingChainAddressVisitor : public boost::static_visitor<bool>
 {
 private:
-    CDakeCoinAddress *addr;
+    CCloudComputingChainAddress *addr;
 public:
-    CDakeCoinAddressVisitor(CDakeCoinAddress *addrIn) : addr(addrIn) { }
+    CCloudComputingChainAddressVisitor(CCloudComputingChainAddress *addrIn) : addr(addrIn) { }
     bool operator()(const CKeyID &id) const;
     bool operator()(const CScriptID &id) const;
     bool operator()(const CNoDestination &no) const;
 };
 
-class CDakeCoinAddress : public CBase58Data
+class CCloudComputingChainAddress : public CBase58Data
 {
 public:
     enum
@@ -291,7 +291,7 @@ public:
 
     bool Set(const CTxDestination &dest)
     {
-        return boost::apply_visitor(CDakeCoinAddressVisitor(this), dest);
+        return boost::apply_visitor(CCloudComputingChainAddressVisitor(this), dest);
     }
 
     bool IsValid() const
@@ -324,21 +324,21 @@ public:
         return fExpectTestNet == fTestNet && vchData.size() == nExpectedSize;
     }
 
-    CDakeCoinAddress()
+    CCloudComputingChainAddress()
     {
     }
 
-    CDakeCoinAddress(const CTxDestination &dest)
+    CCloudComputingChainAddress(const CTxDestination &dest)
     {
         Set(dest);
     }
 
-    CDakeCoinAddress(const std::string& strAddress)
+    CCloudComputingChainAddress(const std::string& strAddress)
     {
         SetString(strAddress);
     }
 
-    CDakeCoinAddress(const char* pszAddress)
+    CCloudComputingChainAddress(const char* pszAddress)
     {
         SetString(pszAddress);
     }
@@ -390,20 +390,20 @@ public:
         }
     }
 };
-typedef CDakeCoinAddress CBitcoinAddress;
+typedef CCloudComputingChainAddress CBitcoinAddress;
 
-bool inline CDakeCoinAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
-bool inline CDakeCoinAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
-bool inline CDakeCoinAddressVisitor::operator()(const CNoDestination &id) const { return false; }
+bool inline CCloudComputingChainAddressVisitor::operator()(const CKeyID &id) const         { return addr->Set(id); }
+bool inline CCloudComputingChainAddressVisitor::operator()(const CScriptID &id) const      { return addr->Set(id); }
+bool inline CCloudComputingChainAddressVisitor::operator()(const CNoDestination &id) const { return false; }
 
 /** A base58-encoded secret key */
-class CDakeCoinSecret : public CBase58Data
+class CCloudComputingChainSecret : public CBase58Data
 {
 public:
     void SetSecret(const CSecret& vchSecret, bool fCompressed)
     {
         assert(vchSecret.size() == 32);
-        SetData(128 + (fTestNet ? CDakeCoinAddress::PUBKEY_ADDRESS_TEST : CDakeCoinAddress::PUBKEY_ADDRESS), &vchSecret[0], vchSecret.size());
+        SetData(128 + (fTestNet ? CCloudComputingChainAddress::PUBKEY_ADDRESS_TEST : CCloudComputingChainAddress::PUBKEY_ADDRESS), &vchSecret[0], vchSecret.size());
         if (fCompressed)
             vchData.push_back(1);
     }
@@ -422,10 +422,10 @@ public:
         bool fExpectTestNet = false;
         switch(nVersion)
         {
-             case (128 + CDakeCoinAddress::PUBKEY_ADDRESS):
+             case (128 + CCloudComputingChainAddress::PUBKEY_ADDRESS):
                 break;
 
-            case (128 + CDakeCoinAddress::PUBKEY_ADDRESS_TEST):
+            case (128 + CCloudComputingChainAddress::PUBKEY_ADDRESS_TEST):
                 fExpectTestNet = true;
                 break;
 
@@ -445,12 +445,12 @@ public:
         return SetString(strSecret.c_str());
     }
 
-    CDakeCoinSecret(const CSecret& vchSecret, bool fCompressed)
+    CCloudComputingChainSecret(const CSecret& vchSecret, bool fCompressed)
     {
         SetSecret(vchSecret, fCompressed);
     }
 
-    CDakeCoinSecret()
+    CCloudComputingChainSecret()
     {
     }
 };

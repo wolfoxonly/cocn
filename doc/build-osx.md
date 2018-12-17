@@ -40,17 +40,17 @@ from the root of the repository.
 
 **Note**: You only need Berkeley DB if the wallet is enabled (see the section *Disable-Wallet mode* below).
 
-Build DakeCoin Core
+Build CloudComputingChain Core
 ------------------------
 
-1. Clone the DakeCoin source code and cd into `DakeCoin`
+1. Clone the CloudComputingChain source code and cd into `CloudComputingChain`
 
-        git clone https://github.com/DakeCoin/DakeCoin
-        cd DakeCoin
+        git clone https://github.com/CloudComputingChain/CloudComputingChain
+        cd CloudComputingChain
 
-2.  Build DakeCoin-core:
+2.  Build CloudComputingChain-core:
 
-    Configure and build the headless DakeCoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless CloudComputingChain binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -69,37 +69,37 @@ Build DakeCoin Core
 Running
 -------
 
-DakeCoin Core is now available at `./src/DakeCoind`
+CloudComputingChain Core is now available at `./src/CloudComputingChaind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=DakeCoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/DakeCoin/DakeCoin.conf"
+    echo -e "rpcuser=CloudComputingChainrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/CloudComputingChain/CloudComputingChain.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/DakeCoin/DakeCoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/CloudComputingChain/CloudComputingChain.conf"
 
-The first time you run DakeCoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run CloudComputingChaind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/DakeCoin/debug.log
+    tail -f $HOME/Library/Application\ Support/CloudComputingChain/debug.log
 
 Other commands:
 -------
 
-    ./src/DakeCoind -daemon # Starts the DakeCoin daemon.
-    ./src/DakeCoin-cli --help # Outputs a list of command-line options.
-    ./src/DakeCoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/CloudComputingChaind -daemon # Starts the CloudComputingChain daemon.
+    ./src/CloudComputingChain-cli --help # Outputs a list of command-line options.
+    ./src/CloudComputingChain-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for DakeCoin development.
+You can use Qt Creator as an IDE, for CloudComputingChain development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "DakeCoin-qt" as project name, enter src/qt as location
+4. Enter "CloudComputingChain-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."
@@ -112,4 +112,4 @@ Notes
 
 * Tested on OS X 10.8 through 10.13 on 64-bit Intel processors only.
 
-* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/DakeCoin/DakeCoin/issues/7714)
+* Building with downloaded Qt binaries is not officially supported. See the notes in [#7714](https://github.com/CloudComputingChain/CloudComputingChain/issues/7714)

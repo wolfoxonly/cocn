@@ -1,4 +1,4 @@
-# Copyright (c) 2013-2016 The DakeCoin Core developers
+# Copyright (c) 2013-2016 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -19,12 +19,12 @@ endif
 BITCOIN_CONFIG_INCLUDES=-I$(builddir)/config
 BITCOIN_INCLUDES=-I$(builddir) -I$(builddir)/obj $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) $(CRYPTO_CFLAGS) $(SSL_CFLAGS)
 
-LIBDAKECOIN_SERVER=libDakeCoin_server.a
-LIBDAKECOIN_COMMON=libDakeCoin_common.a
-LIBDAKECOIN_CLI=libDakeCoin_cli.a
-LIBDAKECOINQT=qt/libDakeCoinqt.a
+LIBDAKECOIN_SERVER=libCloudComputingChain_server.a
+LIBDAKECOIN_COMMON=libCloudComputingChain_common.a
+LIBDAKECOIN_CLI=libCloudComputingChain_cli.a
+LIBDAKECOINQT=qt/libCloudComputingChainqt.a
 if ENABLE_WALLET
-LIBDAKECOIN_WALLET=libDakeCoin_wallet.a
+LIBDAKECOIN_WALLET=libCloudComputingChain_wallet.a
 endif
 
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
@@ -42,15 +42,15 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += DakeCoind
+  bin_PROGRAMS += CloudComputingChaind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += DakeCoin-cli
+  bin_PROGRAMS += CloudComputingChain-cli
 endif
 
 .PHONY: FORCE
-# DakeCoin core #
+# CloudComputingChain core #
 BITCOIN_CORE_H = \
   addrman.h \
   alert.h \
@@ -107,12 +107,12 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(abs_top_builddir)/src/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-libDakeCoin_common_a-version.$(OBJEXT): obj/build.h
+libCloudComputingChain_common_a-version.$(OBJEXT): obj/build.h
 
-# server: shared between DakeCoind and DakeCoin-qt
-libDakeCoin_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libDakeCoin_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libDakeCoin_server_a_SOURCES = \
+# server: shared between CloudComputingChaind and CloudComputingChain-qt
+libCloudComputingChain_server_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libCloudComputingChain_server_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libCloudComputingChain_server_a_SOURCES = \
   addrman.cpp \
   alert.cpp \
   rpcserver.cpp \
@@ -135,11 +135,11 @@ libDakeCoin_server_a_SOURCES = \
   $(JSON_H) \
   $(BITCOIN_CORE_H)
 
-# wallet: shared between DakeCoind and DakeCoin-qt, but only linked
+# wallet: shared between CloudComputingChaind and CloudComputingChain-qt, but only linked
 # when wallet enabled  
-libDakeCoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libDakeCoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libDakeCoin_wallet_a_SOURCES = \
+libCloudComputingChain_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libCloudComputingChain_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libCloudComputingChain_wallet_a_SOURCES = \
   db.cpp \
   rpcdump.cpp \
   rpcmining.cpp \
@@ -152,10 +152,10 @@ libDakeCoin_wallet_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 
-# common: shared between DakeCoind, and DakeCoin-qt and non-server tools
-libDakeCoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libDakeCoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libDakeCoin_common_a_SOURCES = \
+# common: shared between CloudComputingChaind, and CloudComputingChain-qt and non-server tools
+libCloudComputingChain_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libCloudComputingChain_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libCloudComputingChain_common_a_SOURCES = \
   hash.cpp \
   key.cpp \
   netbase.cpp \
@@ -167,27 +167,27 @@ libDakeCoin_common_a_SOURCES = \
   $(BITCOIN_CORE_H)
 
 
-# cli: shared between DakeCoin-cli and DakeCoin-qt
-libDakeCoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-libDakeCoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
-libDakeCoin_cli_a_SOURCES = \
+# cli: shared between CloudComputingChain-cli and CloudComputingChain-qt
+libCloudComputingChain_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+libCloudComputingChain_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)  
+libCloudComputingChain_cli_a_SOURCES = \
   rpcclient.cpp \
   $(BITCOIN_CORE_H)
 
-nodist_libDakeCoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
+nodist_libCloudComputingChain_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# DakeCoind binary #
-DakeCoind_SOURCES = DakeCoind.cpp
-DakeCoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-DakeCoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-DakeCoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# CloudComputingChaind binary #
+CloudComputingChaind_SOURCES = CloudComputingChaind.cpp
+CloudComputingChaind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+CloudComputingChaind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+CloudComputingChaind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-DakeCoind_SOURCES += DakeCoind-res.rc
+CloudComputingChaind_SOURCES += CloudComputingChaind-res.rc
 endif
 
-DakeCoind_LDADD = \
+CloudComputingChaind_LDADD = \
   $(LIBDAKECOIN_SERVER) \
   $(LIBDAKECOIN_COMMON) \
   $(LIBDAKECOIN_WALLET) \
@@ -195,23 +195,23 @@ DakeCoind_LDADD = \
   $(LIBLEVELDB) \
   $(LIBMEMENV) 
 
-DakeCoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+CloudComputingChaind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
-# DakeCoin-cli binary #
-DakeCoin_cli_SOURCES = DakeCoin-cli.cpp
-DakeCoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-DakeCoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-DakeCoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+# CloudComputingChain-cli binary #
+CloudComputingChain_cli_SOURCES = CloudComputingChain-cli.cpp
+CloudComputingChain_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+CloudComputingChain_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+CloudComputingChain_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-DakeCoin_cli_SOURCES += DakeCoin-cli-res.rc
+CloudComputingChain_cli_SOURCES += CloudComputingChain-cli-res.rc
 endif
 
-DakeCoin_cli_LDADD = \
+CloudComputingChain_cli_LDADD = \
   $(LIBDAKECOIN_CLI) \
   $(LIBDAKECOIN_COMMON)
 
-DakeCoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+CloudComputingChain_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 
 
 CLEANFILES = $(EXTRA_LIBRARIES)
@@ -221,12 +221,12 @@ DISTCLEANFILES = obj/build.h
 EXTRA_DIST = leveldb
 
 
-config/DakeCoin-config.h: config/stamp-h1
+config/CloudComputingChain-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/DakeCoin-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/CloudComputingChain-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/DakeCoin-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/DakeCoin-config.h.in
+$(top_srcdir)/$(subdir)/config/CloudComputingChain-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/CloudComputingChain-config.h.in
 
 clean-local:
 	-$(MAKE) -C leveldb clean

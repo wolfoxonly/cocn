@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2017 The DakeCoin Core developers
+# Copyright (c) 2016-2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test compact blocks (BIP 152).
@@ -9,12 +9,12 @@ Version 2 compact blocks are post-segwit (wtxids)
 """
 
 from test_framework.mininode import *
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import *
 from test_framework.blocktools import create_block, create_coinbase, add_witness_commitment
 from test_framework.script import CScript, OP_TRUE
 
-# TestNode: A peer we use to send messages to DakeCoind, and store responses.
+# TestNode: A peer we use to send messages to CloudComputingChaind, and store responses.
 class TestNode(P2PInterface):
     def __init__(self):
         super().__init__()
@@ -88,7 +88,7 @@ class TestNode(P2PInterface):
         self.send_message(message)
         wait_until(lambda: self.state != "connected", timeout=timeout, lock=mininode_lock)
 
-class CompactBlocksTest(DakeCoinTestFramework):
+class CompactBlocksTest(CloudComputingChainTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         # Node0 = pre-segwit, node1 = segwit-aware
@@ -234,7 +234,7 @@ class CompactBlocksTest(DakeCoinTestFramework):
             old_node.request_headers_and_sync(locator=[tip])
             check_announcement_of_new_block(node, old_node, lambda p: "cmpctblock" in p.last_message)
 
-    # This test actually causes DakeCoind to (reasonably!) disconnect us, so do this last.
+    # This test actually causes CloudComputingChaind to (reasonably!) disconnect us, so do this last.
     def test_invalid_cmpctblock_message(self):
         self.nodes[0].generate(101)
         block = self.build_block_on_tip(self.nodes[0])
@@ -249,7 +249,7 @@ class CompactBlocksTest(DakeCoinTestFramework):
         assert_equal(int(self.nodes[0].getbestblockhash(), 16), block.hashPrevBlock)
 
     # Compare the generated shortids to what we expect based on BIP 152, given
-    # DakeCoind's choice of nonce.
+    # CloudComputingChaind's choice of nonce.
     def test_compactblock_construction(self, node, test_node, version, use_witness_address):
         # Generate a bunch of transactions.
         node.generate(101)
@@ -363,7 +363,7 @@ class CompactBlocksTest(DakeCoinTestFramework):
                 header_and_shortids.shortids.pop(0)
             index += 1
 
-    # Test that DakeCoind requests compact blocks when we announce new blocks
+    # Test that CloudComputingChaind requests compact blocks when we announce new blocks
     # via header or inv, and that responding to getblocktxn causes the block
     # to be successfully reconstructed.
     # Post-segwit: upgraded nodes would only make this request of cb-version-2,
@@ -545,7 +545,7 @@ class CompactBlocksTest(DakeCoinTestFramework):
         assert_equal(absolute_indexes, [6, 7, 8, 9, 10])
 
         # Now give an incorrect response.
-        # Note that it's possible for DakeCoind to be smart enough to know we're
+        # Note that it's possible for CloudComputingChaind to be smart enough to know we're
         # lying, since it could check to see if the shortid matches what we're
         # sending, and eg disconnect us for misbehavior.  If that behavior
         # change were made, we could just modify this test by having a
@@ -575,7 +575,7 @@ class CompactBlocksTest(DakeCoinTestFramework):
         assert_equal(int(node.getbestblockhash(), 16), block.sha256)
 
     def test_getblocktxn_handler(self, node, test_node, version):
-        # DakeCoind will not send blocktxn responses for blocks whose height is
+        # CloudComputingChaind will not send blocktxn responses for blocks whose height is
         # more than 10 blocks deep.
         MAX_GETBLOCKTXN_DEPTH = 10
         chain_height = node.getblockcount()

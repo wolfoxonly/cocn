@@ -1,21 +1,21 @@
 
 Debian
 ====================
-This directory contains files used to package DakeCoind/DakeCoin-qt
-for Debian-based Linux systems. If you compile DakeCoind/DakeCoin-qt yourself, there are some useful files here.
+This directory contains files used to package CloudComputingChaind/CloudComputingChain-qt
+for Debian-based Linux systems. If you compile CloudComputingChaind/CloudComputingChain-qt yourself, there are some useful files here.
 
-## DakeCoin: URI support ##
+## CloudComputingChain: URI support ##
 
 
-DakeCoin-qt.desktop  (Gnome / Open Desktop)
+CloudComputingChain-qt.desktop  (Gnome / Open Desktop)
 To install:
 
-	sudo desktop-file-install DakeCoin-qt.desktop
+	sudo desktop-file-install CloudComputingChain-qt.desktop
 	sudo update-desktop-database
 
 If you build yourself, you will either need to modify the paths in
-the .desktop file or copy or symlink your DakeCoin-qt binary to `/usr/bin`
-and the `../../share/pixmaps/DakeCoin128.png` to `/usr/share/pixmaps`
+the .desktop file or copy or symlink your CloudComputingChain-qt binary to `/usr/bin`
+and the `../../share/pixmaps/CloudComputingChain128.png` to `/usr/share/pixmaps`
 
-DakeCoin-qt.protocol (KDE)
+CloudComputingChain-qt.protocol (KDE)
 

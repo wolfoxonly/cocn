@@ -8,7 +8,7 @@
 #include "walletmodel.h"
 #include "optionsmodel.h"
 #include "addresstablemodel.h"
-#include "DakeCoinunits.h"
+#include "CloudComputingChainunits.h"
 #include "util.h"
 #include "kernel.h"
 
@@ -438,7 +438,7 @@ QString MintingTableModel::formatTxAge(const KernelRecord *wtx) const
 
 QString MintingTableModel::formatTxBalance(const KernelRecord *wtx) const
 {
-    return DakeCoinUnits::format(walletModel->getOptionsModel()->getDisplayUnit(), wtx->nValue);
+    return CloudComputingChainUnits::format(walletModel->getOptionsModel()->getDisplayUnit(), wtx->nValue);
 }
 
 QVariant MintingTableModel::headerData(int section, Qt::Orientation orientation, int role) const

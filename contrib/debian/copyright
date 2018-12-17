@@ -1,13 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: DakeCoin
+Upstream-Name: CloudComputingChain
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
- irc://#DakeCoin@freenode.net
-Source: https://github.com/DakeCoin/DakeCoin
+ irc://#CloudComputingChain@freenode.net
+Source: https://github.com/CloudComputingChain/CloudComputingChain
 
 Files: *
-Copyright: 2009-2018, DakeCoin Core Developers
+Copyright: 2009-2018, CloudComputingChain Core Developers
 License: Expat
-Comment: The DakeCoin Core Developers encompasses the current developers listed on DakeCoin.org,
+Comment: The CloudComputingChain Core Developers encompasses the current developers listed on CloudComputingChain.org,
          as well as the numerous contributors to the project.
 
 Files: debian/*
@@ -86,12 +86,12 @@ License: Expat
 Comment: Modifications of Stephan Hutchings Typicons
 
 Files: src/qt/res/icons/about.png
-       src/qt/res/icons/DakeCoin.*
-       share/pixmaps/DakeCoin*
-       src/qt/res/src/DakeCoin.svg
+       src/qt/res/icons/CloudComputingChain.*
+       share/pixmaps/CloudComputingChain*
+       src/qt/res/src/CloudComputingChain.svg
 Copyright: Bitboy, Jonas Schnelli
 License: public-domain
-Comment: Site: https://DakeCointalk.org/?topic=1756.0
+Comment: Site: https://CloudComputingChaintalk.org/?topic=1756.0
 
 
 License: Expat

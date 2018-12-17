@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2017 The DakeCoin Core developers
+# Copyright (c) 2014-2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Run regression test suite.
@@ -10,7 +10,7 @@ forward all unrecognized arguments onto the individual test scripts.
 Functional tests are disabled on Windows by default. Use --force to run them anyway.
 
 For a description of arguments recognized by test scripts, see
-`test/functional/test_framework/test_framework.py:DakeCoinTestFramework.main`.
+`test/functional/test_framework/test_framework.py:CloudComputingChainTestFramework.main`.
 
 """
 
@@ -83,7 +83,7 @@ BASE_SCRIPTS= [
     # vv Tests less than 30s vv
     'keypool-topup.py',
     'zmq_test.py',
-    'DakeCoin_cli.py',
+    'CloudComputingChain_cli.py',
     'mempool_resurrect_test.py',
     'txn_doublespend.py --mineblock',
     'txn_clone.py',
@@ -211,23 +211,23 @@ def main():
     logging.basicConfig(format='%(message)s', level=logging_level)
 
     # Create base test directory
-    tmpdir = "%s/DakeCoin_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
+    tmpdir = "%s/CloudComputingChain_test_runner_%s" % (args.tmpdirprefix, datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
     os.makedirs(tmpdir)
 
     logging.debug("Temporary test directory at %s" % tmpdir)
 
     enable_wallet = config["components"].getboolean("ENABLE_WALLET")
     enable_utils = config["components"].getboolean("ENABLE_UTILS")
-    enable_DakeCoind = config["components"].getboolean("ENABLE_BITCOIND")
+    enable_CloudComputingChaind = config["components"].getboolean("ENABLE_BITCOIND")
 
     if config["environment"]["EXEEXT"] == ".exe" and not args.force:
-        # https://github.com/DakeCoin/DakeCoin/commit/d52802551752140cf41f0d9a225a43e84404d3e9
-        # https://github.com/DakeCoin/DakeCoin/pull/5677#issuecomment-136646964
+        # https://github.com/CloudComputingChain/CloudComputingChain/commit/d52802551752140cf41f0d9a225a43e84404d3e9
+        # https://github.com/CloudComputingChain/CloudComputingChain/pull/5677#issuecomment-136646964
         print("Tests currently disabled on Windows by default. Use --force option to enable")
         sys.exit(0)
 
-    if not (enable_wallet and enable_utils and enable_DakeCoind):
-        print("No functional tests to run. Wallet, utils, and DakeCoind must all be enabled")
+    if not (enable_wallet and enable_utils and enable_CloudComputingChaind):
+        print("No functional tests to run. Wallet, utils, and CloudComputingChaind must all be enabled")
         print("Rerun `configure` with -enable-wallet, -with-utils and -with-daemon and rerun make")
         sys.exit(0)
 
@@ -279,10 +279,10 @@ def main():
     run_tests(test_list, config["environment"]["SRCDIR"], config["environment"]["BUILDDIR"], config["environment"]["EXEEXT"], tmpdir, args.jobs, args.coverage, passon_args, args.combinedlogslen)
 
 def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_coverage=False, args=[], combined_logs_len=0):
-    # Warn if DakeCoind is already running (unix only)
+    # Warn if CloudComputingChaind is already running (unix only)
     try:
-        if subprocess.check_output(["pidof", "DakeCoind"]) is not None:
-            print("%sWARNING!%s There is already a DakeCoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+        if subprocess.check_output(["pidof", "CloudComputingChaind"]) is not None:
+            print("%sWARNING!%s There is already a CloudComputingChaind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except (OSError, subprocess.SubprocessError):
         pass
 
@@ -293,8 +293,8 @@ def run_tests(test_list, src_dir, build_dir, exeext, tmpdir, jobs=1, enable_cove
 
     #Set env vars
     if "BITCOIND" not in os.environ:
-        os.environ["BITCOIND"] = build_dir + '/src/DakeCoind' + exeext
-        os.environ["BITCOINCLI"] = build_dir + '/src/DakeCoin-cli' + exeext
+        os.environ["BITCOIND"] = build_dir + '/src/CloudComputingChaind' + exeext
+        os.environ["BITCOINCLI"] = build_dir + '/src/CloudComputingChain-cli' + exeext
 
     tests_dir = src_dir + '/test/functional/'
 
@@ -391,7 +391,7 @@ class TestHandler:
         self.test_list = test_list
         self.flags = flags
         self.num_running = 0
-        # In case there is a graveyard of zombie DakeCoinds, we can apply a
+        # In case there is a graveyard of zombie CloudComputingChainds, we can apply a
         # pseudorandom offset to hopefully jump over them.
         # (625 is PORT_RANGE/MAX_NODES)
         self.portseed_offset = int(time.time() * 1000) % 625
@@ -491,7 +491,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `DakeCoin-cli help` (`rpc_interface.txt`).
+    commands per `CloudComputingChain-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

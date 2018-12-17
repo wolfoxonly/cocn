@@ -1,5 +1,5 @@
 ---
-name: "DakeCoin-dmg-signer"
+name: "CloudComputingChain-dmg-signer"
 suites:
 - "trusty"
 architectures:
@@ -7,10 +7,10 @@ architectures:
 packages:
 - "faketime"
 remotes:
-- "url": "https://github.com/DakeCoin-core/DakeCoin-detached-sigs.git"
+- "url": "https://github.com/CloudComputingChain-core/CloudComputingChain-detached-sigs.git"
   "dir": "signature"
 files:
-- "DakeCoin-osx-unsigned.tar.gz"
+- "CloudComputingChain-osx-unsigned.tar.gz"
 script: |
   WRAP_DIR=$HOME/wrapped
   mkdir -p ${WRAP_DIR}
@@ -27,8 +27,8 @@ script: |
     chmod +x ${WRAP_DIR}/${prog}
   done
 
-  UNSIGNED=DakeCoin-osx-unsigned.tar.gz
-  SIGNED=DakeCoin-osx-signed.dmg
+  UNSIGNED=CloudComputingChain-osx-unsigned.tar.gz
+  SIGNED=CloudComputingChain-osx-signed.dmg
 
   tar -xf ${UNSIGNED}
   OSX_VOLNAME="$(cat osx_volname)"

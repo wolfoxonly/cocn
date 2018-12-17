@@ -1,9 +1,9 @@
 #!/bin/bash
-# Copyright (c) 2014-2015 The DakeCoin Core developers
+# Copyright (c) 2014-2015 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-if ! [[ "$2" =~ ^(git@)?(www.)?github.com(:|/)DakeCoin/DakeCoin(.git)?$ ]]; then
+if ! [[ "$2" =~ ^(git@)?(www.)?github.com(:|/)CloudComputingChain/CloudComputingChain(.git)?$ ]]; then
     exit 0
 fi
 

@@ -1,16 +1,16 @@
-DakeCoin Core version *0.15.0.1* is now available from:
+CloudComputingChain Core version *0.15.0.1* is now available from:
 
-  <https://DakeCoin.org/bin/DakeCoin-core-0.15.0.1/>
+  <https://CloudComputingChain.org/bin/CloudComputingChain-core-0.15.0.1/>
 
 and
 
-  <https://bitcoincore.org/bin/DakeCoin-core-0.15.0.1/>
+  <https://bitcoincore.org/bin/CloudComputingChain-core-0.15.0.1/>
 
 This is a minor bug fix for 0.15.0.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/DakeCoin/DakeCoin/issues>
+  <https://github.com/CloudComputingChain/CloudComputingChain/issues>
 
 To receive security and update notifications, please subscribe to:
 
@@ -21,8 +21,8 @@ How to Upgrade
 
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the 
-installer (on Windows) or just copy over `/Applications/DakeCoin-Qt` (on Mac)
-or `DakeCoind`/`DakeCoin-qt` (on Linux).
+installer (on Windows) or just copy over `/Applications/CloudComputingChain-Qt` (on Mac)
+or `CloudComputingChaind`/`CloudComputingChain-qt` (on Linux).
 
 The first time you run version 0.15.0 or higher, your chainstate database will
 be converted to a new format, which will take anywhere from a few minutes to
@@ -51,10 +51,10 @@ processing the entire blockchain.
 Compatibility
 ==============
 
-DakeCoin Core is extensively tested on multiple operating systems using
+CloudComputingChain Core is extensively tested on multiple operating systems using
 the Linux kernel, macOS 10.8+, and Windows Vista and later. Windows XP is not supported.
 
-DakeCoin Core should also work on most other Unix-like systems but is not
+CloudComputingChain Core should also work on most other Unix-like systems but is not
 frequently tested on them.
 
 Notable changes
@@ -84,4 +84,4 @@ Thanks to everyone who directly contributed to this release:
 - Jonas Schnelli
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/DakeCoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/CloudComputingChain/).

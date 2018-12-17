@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>DakeCoin - Debug window</string>
+   <string>CloudComputingChain - Debug window</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -36,7 +36,7 @@
           </font>
          </property>
          <property name="text">
-          <string>DakeCoin Core</string>
+          <string>CloudComputingChain Core</string>
          </property>
         </widget>
        </item>
@@ -322,7 +322,7 @@
        <item row="15" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the DakeCoin debug log file from the current data directory. This can take a few seconds for large log files.</string>
+          <string>Open the CloudComputingChain debug log file from the current data directory. This can take a few seconds for large log files.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -348,7 +348,7 @@
        <item row="17" column="0">
         <widget class="QPushButton" name="showCLOptionsButton">
          <property name="toolTip">
-          <string>Show the DakeCoin-Qt help message to get a list with possible DakeCoin command-line options.</string>
+          <string>Show the CloudComputingChain-Qt help message to get a list with possible CloudComputingChain command-line options.</string>
          </property>
          <property name="text">
           <string>&amp;Show</string>
@@ -430,7 +430,7 @@
             <string/>
            </property>
            <property name="icon">
-            <iconset resource="../DakeCoin.qrc">
+            <iconset resource="../CloudComputingChain.qrc">
              <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
            </property>
            <property name="shortcut">
@@ -450,7 +450,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../DakeCoin.qrc"/>
+  <include location="../CloudComputingChain.qrc"/>
  </resources>
  <connections/>
 </ui>

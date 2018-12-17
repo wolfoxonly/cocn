@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>DakeCoin.icns</string>
+  <string>CloudComputingChain.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -29,16 +29,16 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>DakeCoin-Qt</string>
+  <string>CloudComputingChain-Qt</string>
   
   <key>CFBundleName</key>
-  <string>DakeCoin-Qt</string>
+  <string>CloudComputingChain-Qt</string>
 
   <key>LSHasLocalizedDisplayName</key>
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.DakeCoinfoundation.DakeCoin-Qt</string>
+  <string>org.CloudComputingChainfoundation.CloudComputingChain-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.DakeCoin.DakeCoinPayment</string>
+      <string>org.CloudComputingChain.CloudComputingChainPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>DakeCoin</string>
+        <string>CloudComputingChain</string>
       </array>
     </dict>
   </array>
@@ -58,9 +58,9 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.DakeCoin.paymentrequest</string>
+      <string>org.CloudComputingChain.paymentrequest</string>
       <key>UTTypeDescription</key>
-      <string>DakeCoin payment request</string>
+      <string>CloudComputingChain payment request</string>
       <key>UTTypeConformsTo</key>
       <array>
         <string>public.data</string>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-DakeCoin-payment-request</string>
+        <string>application/x-CloudComputingChain-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>DakeCoinpaymentrequest</string>
+          <string>CloudComputingChainpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.DakeCoin.paymentrequest</string>
+        <string>org.CloudComputingChain.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

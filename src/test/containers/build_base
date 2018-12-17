@@ -3,7 +3,7 @@
 set -e
 
 cd $(dirname $0)/base
-docker build -t DakeCoin/base .
+docker build -t CloudComputingChain/base .
 
 cd ../base_devel
-docker build -t DakeCoin/devel .
+docker build -t CloudComputingChain/devel .

@@ -61,7 +61,7 @@ public:
             LOCK(wallet->cs_wallet);
             BOOST_FOREACH(const PAIRTYPE(CTxDestination, std::string)& item, wallet->mapAddressBook)
             {
-                const CDakeCoinAddress& address = item.first;
+                const CCloudComputingChainAddress& address = item.first;
                 const std::string& strName = item.second;
                 bool fMine = IsMine(*wallet, address.Get());
                 cachedAddressTable.append(AddressTableEntry(fMine ? AddressTableEntry::Receiving : AddressTableEntry::Sending,
@@ -192,7 +192,7 @@ QVariant AddressTableModel::data(const QModelIndex &index, int role) const
         QFont font;
         if(index.column() == Address)
         {
-            font = GUIUtil::DakeCoinAddressFont();
+            font = GUIUtil::CloudComputingChainAddressFont();
         }
         return font;
     }
@@ -229,11 +229,11 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
                 editStatus = NO_CHANGES;
                 return false;
             }
-            wallet->SetAddressBookName(CDakeCoinAddress(rec->address.toStdString()).Get(), value.toString().toStdString());
+            wallet->SetAddressBookName(CCloudComputingChainAddress(rec->address.toStdString()).Get(), value.toString().toStdString());
             break;
         case Address:
             // Do nothing, if old address == new address
-            if(CDakeCoinAddress(rec->address.toStdString()) == CDakeCoinAddress(value.toString().toStdString()))
+            if(CCloudComputingChainAddress(rec->address.toStdString()) == CCloudComputingChainAddress(value.toString().toStdString()))
             {
                 editStatus = NO_CHANGES;
                 return false;
@@ -246,7 +246,7 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
             }
             // Check for duplicate addresses to prevent accidental deletion of addresses, if you try
             // to paste an existing address over another address (with a different label)
-            else if(wallet->mapAddressBook.count(CDakeCoinAddress(value.toString().toStdString()).Get()))
+            else if(wallet->mapAddressBook.count(CCloudComputingChainAddress(value.toString().toStdString()).Get()))
             {
                 editStatus = DUPLICATE_ADDRESS;
                 return false;
@@ -257,9 +257,9 @@ bool AddressTableModel::setData(const QModelIndex &index, const QVariant &value,
                 {
                     LOCK(wallet->cs_wallet);
                     // Remove old entry
-                    wallet->DelAddressBookName(CDakeCoinAddress(rec->address.toStdString()).Get());
+                    wallet->DelAddressBookName(CCloudComputingChainAddress(rec->address.toStdString()).Get());
                     // Add new entry with new address
-                    wallet->SetAddressBookName(CDakeCoinAddress(value.toString().toStdString()).Get(), rec->label.toStdString());
+                    wallet->SetAddressBookName(CCloudComputingChainAddress(value.toString().toStdString()).Get(), rec->label.toStdString());
                 }
             }
             break;
@@ -314,7 +314,7 @@ QModelIndex AddressTableModel::index(int row, int column, const QModelIndex &par
 
 void AddressTableModel::updateEntry(const QString &address, const QString &label, bool isMine, int status)
 {
-    // Update address book model from DakeCoin core
+    // Update address book model from CloudComputingChain core
     priv->updateEntry(address, label, isMine, status);
 }
 
@@ -335,7 +335,7 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
         // Check for duplicate addresses
         {
             LOCK(wallet->cs_wallet);
-            if(wallet->mapAddressBook.count(CDakeCoinAddress(strAddress).Get()))
+            if(wallet->mapAddressBook.count(CCloudComputingChainAddress(strAddress).Get()))
             {
                 editStatus = DUPLICATE_ADDRESS;
                 return QString();
@@ -358,7 +358,7 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
             editStatus = KEY_GENERATION_FAILURE;
             return QString();
         }
-        strAddress = CDakeCoinAddress(newKey.GetID()).ToString();
+        strAddress = CCloudComputingChainAddress(newKey.GetID()).ToString();
     }
     else
     {
@@ -368,7 +368,7 @@ QString AddressTableModel::addRow(const QString &type, const QString &label, con
     // Add entry
     {
         LOCK(wallet->cs_wallet);
-        wallet->SetAddressBookName(CDakeCoinAddress(strAddress).Get(), strLabel);
+        wallet->SetAddressBookName(CCloudComputingChainAddress(strAddress).Get(), strLabel);
     }
     return QString::fromStdString(strAddress);
 }
@@ -385,7 +385,7 @@ bool AddressTableModel::removeRows(int row, int count, const QModelIndex &parent
     }
     {
         LOCK(wallet->cs_wallet);
-        wallet->DelAddressBookName(CDakeCoinAddress(rec->address.toStdString()).Get());
+        wallet->DelAddressBookName(CCloudComputingChainAddress(rec->address.toStdString()).Get());
     }
     return true;
 }
@@ -396,7 +396,7 @@ QString AddressTableModel::labelForAddress(const QString &address) const
 {
     {
         LOCK(wallet->cs_wallet);
-        CDakeCoinAddress address_parsed(address.toStdString());
+        CCloudComputingChainAddress address_parsed(address.toStdString());
         std::map<CTxDestination, std::string>::iterator mi = wallet->mapAddressBook.find(address_parsed.Get());
         if (mi != wallet->mapAddressBook.end())
         {

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2016-2017 The DakeCoin Core developers
+# Copyright (c) 2016-2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test account RPCs.
@@ -13,10 +13,10 @@ RPCs tested are:
     - move (with account arguments)
 """
 
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import assert_equal
 
-class WalletAccountsTest(DakeCoinTestFramework):
+class WalletAccountsTest(CloudComputingChainTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1
@@ -34,7 +34,7 @@ class WalletAccountsTest(DakeCoinTestFramework):
         assert_equal(node.getbalance(), 100)
 
         # there should be 2 address groups
-        # each with 1 address with a balance of 50 DakeCoins
+        # each with 1 address with a balance of 50 CloudComputingChains
         address_groups = node.listaddressgroupings()
         assert_equal(len(address_groups), 2)
         # the addresses aren't linked now, but will be after we send to the

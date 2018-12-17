@@ -1,4 +1,4 @@
 Gitian building
 ================
 
-This file was moved to [the DakeCoin Core documentation repository](https://github.com/DakeCoin-core/docs/blob/master/gitian-building.md) at [https://github.com/DakeCoin-core/docs](https://github.com/DakeCoin-core/docs).
+This file was moved to [the CloudComputingChain Core documentation repository](https://github.com/CloudComputingChain-core/docs/blob/master/gitian-building.md) at [https://github.com/CloudComputingChain-core/docs](https://github.com/CloudComputingChain-core/docs).

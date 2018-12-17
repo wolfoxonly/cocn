@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2017 The DakeCoin Core developers
+# Copyright (c) 2015-2017 The CloudComputingChain Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test decoding scripts via decodescript RPC command."""
 
-from test_framework.test_framework import DakeCoinTestFramework
+from test_framework.test_framework import CloudComputingChainTestFramework
 from test_framework.util import *
 from test_framework.mininode import *
 from io import BytesIO
 
-class DecodeScriptTest(DakeCoinTestFramework):
+class DecodeScriptTest(CloudComputingChainTestFramework):
     def set_test_params(self):
         self.setup_clean_chain = True
         self.num_nodes = 1

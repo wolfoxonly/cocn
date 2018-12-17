@@ -1,7 +1,7 @@
 Translation Strings Policy
 ===========================
 
-This document provides guidelines for internationalization of the DakeCoin Core software.
+This document provides guidelines for internationalization of the CloudComputingChain Core software.
 
 How to translate?
 ------------------
@@ -85,10 +85,10 @@ In Qt code use tr's third argument for optional plurality. For example:
 This adds `<numerusform>`s to the respective `.ts` file, which can be translated separately depending on the language. In English, this is simply:
 
     <message numerus="yes">
-        <source>%n active connection(s) to DakeCoin network</source>
+        <source>%n active connection(s) to CloudComputingChain network</source>
         <translation>
-            <numerusform>%n active connection to DakeCoin network</numerusform>
-            <numerusform>%n active connections to DakeCoin network</numerusform>
+            <numerusform>%n active connection to CloudComputingChain network</numerusform>
+            <numerusform>%n active connections to CloudComputingChain network</numerusform>
         </translation>
     </message>
 
@@ -106,4 +106,4 @@ The second example reduces the number of pluralized words that translators have 
 
 During a string freeze (often before a major release), no translation strings are to be added, modified or removed.
 
-This can be checked by executing `make translate` in the `src` directory, then verifying that `DakeCoin_en.ts` remains unchanged.
+This can be checked by executing `make translate` in the `src` directory, then verifying that `CloudComputingChain_en.ts` remains unchanged.

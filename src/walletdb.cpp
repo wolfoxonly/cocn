@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The DakeCoin developers
-// Copyright (c) 2012-2017 The DakeCoin developers
+// Copyright (c) 2009-2012 The CloudComputingChain developers
+// Copyright (c) 2012-2017 The CloudComputingChain developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -197,7 +197,7 @@ ReadKeyValue(CWallet* pwallet, CDataStream& ssKey, CDataStream& ssValue,
         {
             string strAddress;
             ssKey >> strAddress;
-            ssValue >> pwallet->mapAddressBook[CDakeCoinAddress(strAddress).Get()];
+            ssValue >> pwallet->mapAddressBook[CCloudComputingChainAddress(strAddress).Get()];
         }
         else if (strType == "tx")
         {
@@ -568,7 +568,7 @@ DBErrors CWalletDB::ZapWalletTx(CWallet* pwallet)
 void ThreadFlushWalletDB(const string& strFile)
 {
     // Make this thread recognisable as the wallet flushing thread
-    RenameThread("DakeCoin-wallet");
+    RenameThread("CloudComputingChain-wallet");
 
     static bool fOneThread;
     if (fOneThread)

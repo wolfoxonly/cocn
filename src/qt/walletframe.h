@@ -1,15 +1,15 @@
 /*
- * Qt4 DakeCoin GUI.
+ * Qt4 CloudComputingChain GUI.
  *
  * W.J. van der Laan 2011-2012
- * The DakeCoin Developers 2011-2013
+ * The CloudComputingChain Developers 2011-2013
  */
 #ifndef WALLETFRAME_H
 #define WALLETFRAME_H
 
 #include <QFrame>
 
-class DakeCoinGUI;
+class CloudComputingChainGUI;
 class ClientModel;
 class WalletModel;
 class WalletStack;
@@ -18,7 +18,7 @@ class WalletFrame : public QFrame
 {
     Q_OBJECT
 public:
-    explicit WalletFrame(DakeCoinGUI *_gui);
+    explicit WalletFrame(CloudComputingChainGUI *_gui);
     ~WalletFrame();
 
     void setClientModel(ClientModel *clientModel);
@@ -33,7 +33,7 @@ public:
     void showOutOfSyncWarning(bool fShow);
 
 private:
-    DakeCoinGUI *gui;
+    CloudComputingChainGUI *gui;
     ClientModel *clientModel;
     WalletStack *walletStack;
 

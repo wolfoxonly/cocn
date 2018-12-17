@@ -31,12 +31,12 @@
       </attribute>
       <layout class="QVBoxLayout" name="verticalLayout_Main">
        <item>
-        <widget class="QCheckBox" name="DakeCoinAtStartup">
+        <widget class="QCheckBox" name="CloudComputingChainAtStartup">
          <property name="toolTip">
-          <string>Automatically start DakeCoin after logging in to the system.</string>
+          <string>Automatically start CloudComputingChain after logging in to the system.</string>
          </property>
          <property name="text">
-          <string>&amp;Start DakeCoin on system login</string>
+          <string>&amp;Start CloudComputingChain on system login</string>
          </property>
         </widget>
        </item>
@@ -103,7 +103,7 @@
        <item>
         <widget class="QCheckBox" name="mapPortUpnp">
          <property name="toolTip">
-          <string>Automatically open the DakeCoin client port on the router. This only works when your router supports UPnP and it is enabled.</string>
+          <string>Automatically open the CloudComputingChain client port on the router. This only works when your router supports UPnP and it is enabled.</string>
          </property>
          <property name="text">
           <string>Map port using &amp;UPnP</string>
@@ -113,7 +113,7 @@
        <item>
         <widget class="QCheckBox" name="connectSocks">
          <property name="toolTip">
-          <string>Connect to the DakeCoin network through a SOCKS proxy (e.g. when connecting through Tor).</string>
+          <string>Connect to the CloudComputingChain network through a SOCKS proxy (e.g. when connecting through Tor).</string>
          </property>
          <property name="text">
           <string>&amp;Connect through SOCKS proxy:</string>
@@ -287,7 +287,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting DakeCoin.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting CloudComputingChain.</string>
            </property>
           </widget>
          </item>
@@ -320,7 +320,7 @@
        <item>
         <widget class="QCheckBox" name="displayAddresses">
          <property name="toolTip">
-          <string>Whether to show DakeCoin addresses in the transaction list or not.</string>
+          <string>Whether to show CloudComputingChain addresses in the transaction list or not.</string>
          </property>
          <property name="text">
           <string>&amp;Display addresses in transaction list</string>
@@ -434,9 +434,9 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>DakeCoinAmountField</class>
+   <class>CloudComputingChainAmountField</class>
    <extends>QSpinBox</extends>
-   <header>DakeCoinamountfield.h</header>
+   <header>CloudComputingChainamountfield.h</header>
   </customwidget>
   <customwidget>
    <class>QValueComboBox</class>
