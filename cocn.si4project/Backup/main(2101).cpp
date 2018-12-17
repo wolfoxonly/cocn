@@ -3404,7 +3404,7 @@ bool InitBlockIndex() {
         block.nTime    = 1545019100;// <coingo.vip>
         block.nBits    = bnProofOfWorkLimit.GetCompact();
       //  block.nNonce   = 2179302059u;
-        block.nNonce = ByteReverse(13550653);//<coingo.vip>校验
+        block.nNonce = ByteReverse(6362388);//<coingo.vip>校验
         if (fTestNet)
         {
             block.nTime    = 1345090000;
