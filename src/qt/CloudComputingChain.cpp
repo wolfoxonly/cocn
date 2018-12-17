@@ -1,11 +1,11 @@
 /*
  * W.J. van der Laan 2011-2012
- * The DakeCoin developers 2013-2017
+ * The CloudComputingChain developers 2013-2017
  */
 
 #include <QApplication>
 
-#include "DakeCoingui.h"
+#include "CloudComputingChaingui.h"
 #include "clientmodel.h"
 #include "walletmodel.h"
 #include "optionsmodel.h"
@@ -69,7 +69,7 @@ Q_IMPORT_PLUGIN(qtaccessiblewidgets)
 Q_DECLARE_METATYPE(bool*)
 
 // Need a global reference for the notifications to find the GUI
-static DakeCoinGUI *guiref;
+static CloudComputingChainGUI *guiref;
 static SplashScreen *splashref;
 
 static bool ThreadSafeMessageBox(const std::string& message, const std::string& caption, unsigned int style)
@@ -127,7 +127,7 @@ static void InitMessage(const std::string &message)
  */
 static std::string Translate(const char* psz)
 {
-    return QCoreApplication::translate("DakeCoin-core", psz).toStdString();
+    return QCoreApplication::translate("CloudComputingChain-core", psz).toStdString();
 }
 
 /* Handle runaway exceptions. Shows a message box with the problem and quits the program.
@@ -135,7 +135,7 @@ static std::string Translate(const char* psz)
 static void handleRunawayException(std::exception *e)
 {
     PrintExceptionContinue(e, "Runaway exception");
-    QMessageBox::critical(0, "Runaway exception", DakeCoinGUI::tr("A fatal error occurred. DakeCoin can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
+    QMessageBox::critical(0, "Runaway exception", CloudComputingChainGUI::tr("A fatal error occurred. CloudComputingChain can no longer continue safely and will quit.") + QString("\n\n") + QString::fromStdString(strMiscWarning));
     exit(1);
 }
 
@@ -151,7 +151,7 @@ int main(int argc, char *argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(DakeCoin);
+    Q_INIT_RESOURCE(CloudComputingChain);
     QApplication app(argc, argv);
 
     // Register meta types used for QMetaObject::invokeMethod
@@ -166,12 +166,12 @@ int main(int argc, char *argv[])
     // Install global event filter that makes sure that long tooltips can be word-wrapped
     app.installEventFilter(new GUIUtil::ToolTipToRichTextFilter(TOOLTIP_WRAP_THRESHOLD, &app));
 
-    // ... then DakeCoin.conf:
+    // ... then CloudComputingChain.conf:
     if (!boost::filesystem::is_directory(GetDataDir(false)))
     {
         // This message can not be translated, as translation is not initialized yet
-        // (which not yet possible because lang=XX can be overridden in DakeCoin.conf in the data directory)
-        QMessageBox::critical(0, "DakeCoin",
+        // (which not yet possible because lang=XX can be overridden in CloudComputingChain.conf in the data directory)
+        QMessageBox::critical(0, "CloudComputingChain",
                               QString("Error: Specified data directory \"%1\" does not exist.").arg(QString::fromStdString(mapArgs["-datadir"])));
         return 1;
     }
@@ -179,12 +179,12 @@ int main(int argc, char *argv[])
 
     // Application identification (must be set before OptionsModel is initialized,
     // as it is used to locate QSettings)
-    QApplication::setOrganizationName("DakeCoin");
-    QApplication::setOrganizationDomain("DakeCoin.net");
+    QApplication::setOrganizationName("CloudComputingChain");
+    QApplication::setOrganizationDomain("CloudComputingChain.net");
     if(GetBoolArg("-testnet")) // Separate UI settings for testnet
-        QApplication::setApplicationName("DakeCoin-Testnet");
+        QApplication::setApplicationName("CloudComputingChain-Testnet");
     else
-        QApplication::setApplicationName("DakeCoin");
+        QApplication::setApplicationName("CloudComputingChain");
 
     // ... then GUI settings:
     OptionsModel optionsModel;
@@ -208,11 +208,11 @@ int main(int argc, char *argv[])
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         app.installTranslator(&qtTranslator);
 
-    // Load e.g. DakeCoin_de.qm (shortcut "de" needs to be defined in DakeCoin.qrc)
+    // Load e.g. CloudComputingChain_de.qm (shortcut "de" needs to be defined in CloudComputingChain.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         app.installTranslator(&translatorBase);
 
-    // Load e.g. DakeCoin_de_DE.qm (shortcut "de_DE" needs to be defined in DakeCoin.qrc)
+    // Load e.g. CloudComputingChain_de_DE.qm (shortcut "de_DE" needs to be defined in CloudComputingChain.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         app.installTranslator(&translator);
 
@@ -234,7 +234,7 @@ int main(int argc, char *argv[])
 #ifdef Q_OS_MAC
     // on mac, also change the icon now because it would look strange to have a testnet splash (green) and a std app icon (orange)
     if(GetBoolArg("-testnet")) {
-        MacDockIconHandler::instance()->setIcon(QIcon(":icons/DakeCoin_testnet"));
+        MacDockIconHandler::instance()->setIcon(QIcon(":icons/CloudComputingChain_testnet"));
     }
 #endif
 
@@ -257,7 +257,7 @@ int main(int argc, char *argv[])
 
         boost::thread_group threadGroup;
 
-        DakeCoinGUI window;
+        CloudComputingChainGUI window;
         guiref = &window;
 
         QTimer* pollShutdownTimer = new QTimer(guiref);
@@ -293,7 +293,7 @@ int main(int argc, char *argv[])
                 }
 
                 // Now that initialization/startup is done, process any command-line
-                // DakeCoin: URIs
+                // CloudComputingChain: URIs
                 QObject::connect(paymentServer, SIGNAL(receivedURI(QString)), &window, SLOT(handleURI(QString)));
                 QTimer::singleShot(100, paymentServer, SLOT(uiReady()));
 
@@ -304,7 +304,7 @@ int main(int argc, char *argv[])
                 window.removeAllWallets();
                 guiref = 0;
             }
-            // Shutdown the core and its threads, but don't exit DakeCoin-Qt here
+            // Shutdown the core and its threads, but don't exit CloudComputingChain-Qt here
             threadGroup.interrupt_all();
             threadGroup.join_all();
             Shutdown();

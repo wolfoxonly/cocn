@@ -1,23 +1,23 @@
-#include "DakeCoinunits.h"
+#include "CloudComputingChainunits.h"
 
 #include <QStringList>
 
-DakeCoinUnits::DakeCoinUnits(QObject *parent):
+CloudComputingChainUnits::CloudComputingChainUnits(QObject *parent):
         QAbstractListModel(parent),
         unitlist(availableUnits())
 {
 }
 
-QList<DakeCoinUnits::Unit> DakeCoinUnits::availableUnits()
+QList<CloudComputingChainUnits::Unit> CloudComputingChainUnits::availableUnits()
 {
-    QList<DakeCoinUnits::Unit> unitlist;
+    QList<CloudComputingChainUnits::Unit> unitlist;
     unitlist.append(BTC);
     unitlist.append(mBTC);
     unitlist.append(uBTC);
     return unitlist;
 }
 
-bool DakeCoinUnits::valid(int unit)
+bool CloudComputingChainUnits::valid(int unit)
 {
     switch(unit)
     {
@@ -30,7 +30,7 @@ bool DakeCoinUnits::valid(int unit)
     }
 }
 
-QString DakeCoinUnits::name(int unit)
+QString CloudComputingChainUnits::name(int unit)
 {
     switch(unit)
     {
@@ -41,18 +41,18 @@ QString DakeCoinUnits::name(int unit)
     }
 }
 
-QString DakeCoinUnits::description(int unit)
+QString CloudComputingChainUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("DakeCoins");
-    case mBTC: return QString("Milli-DakeCoins (1 / 1,000)");
-    case uBTC: return QString("Micro-DakeCoins (1 / 1,000,000)");
+    case BTC: return QString("CloudComputingChains");
+    case mBTC: return QString("Milli-CloudComputingChains (1 / 1,000)");
+    case uBTC: return QString("Micro-CloudComputingChains (1 / 1,000,000)");
     default: return QString("???");
     }
 }
 
-qint64 DakeCoinUnits::factor(int unit)
+qint64 CloudComputingChainUnits::factor(int unit)
 {
     switch(unit)
     {
@@ -63,7 +63,7 @@ qint64 DakeCoinUnits::factor(int unit)
     }
 }
 
-int DakeCoinUnits::amountDigits(int unit)
+int CloudComputingChainUnits::amountDigits(int unit)
 {
     switch(unit)
     {
@@ -74,7 +74,7 @@ int DakeCoinUnits::amountDigits(int unit)
     }
 }
 
-int DakeCoinUnits::decimals(int unit)
+int CloudComputingChainUnits::decimals(int unit)
 {
     switch(unit)
     {
@@ -85,7 +85,7 @@ int DakeCoinUnits::decimals(int unit)
     }
 }
 
-QString DakeCoinUnits::format(int unit, qint64 n, bool fPlus, bool trimzeros)
+QString CloudComputingChainUnits::format(int unit, qint64 n, bool fPlus, bool trimzeros)
 {
     // Note: not using straight sprintf here because we do NOT want
     // localized number formatting.
@@ -115,12 +115,12 @@ QString DakeCoinUnits::format(int unit, qint64 n, bool fPlus, bool trimzeros)
     return quotient_str + QString(".") + remainder_str;
 }
 
-QString DakeCoinUnits::formatWithUnit(int unit, qint64 amount, bool plussign, bool trimzeros)
+QString CloudComputingChainUnits::formatWithUnit(int unit, qint64 amount, bool plussign, bool trimzeros)
 {
     return format(unit, amount, plussign, trimzeros) + QString(" ") + name(unit);
 }
 
-bool DakeCoinUnits::parse(int unit, const QString &value, qint64 *val_out)
+bool CloudComputingChainUnits::parse(int unit, const QString &value, qint64 *val_out)
 {
     if(!valid(unit) || value.isEmpty())
         return false; // Refuse to parse invalid unit or empty string
@@ -157,13 +157,13 @@ bool DakeCoinUnits::parse(int unit, const QString &value, qint64 *val_out)
     return ok;
 }
 
-int DakeCoinUnits::rowCount(const QModelIndex &parent) const
+int CloudComputingChainUnits::rowCount(const QModelIndex &parent) const
 {
     Q_UNUSED(parent);
     return unitlist.size();
 }
 
-QVariant DakeCoinUnits::data(const QModelIndex &index, int role) const
+QVariant CloudComputingChainUnits::data(const QModelIndex &index, int role) const
 {
     int row = index.row();
     if(row >= 0 && row < unitlist.size())
