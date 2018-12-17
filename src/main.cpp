@@ -3460,6 +3460,7 @@ bool InitBlockIndex() {
 
                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
                       block.nNonce = ByteReverse(nNonceFound);
+					  printf("block.ByteReverse(nNonceFound) 22222222 :%d \n" ,block.nNonce);
                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
                                     
                    
@@ -3476,7 +3477,7 @@ bool InitBlockIndex() {
         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
        // assert(block.hashMerkleRoot == uint256("0xece2718fca52c7c1c233fb9add9a7a4866794d8043fe75af407a9c59fa56cc79"));
         block.print();
-        assert(hash == hashGenesisBlock);//<coingo.vip>
+     //   assert(hash == hashGenesisBlock);//<coingo.vip>
         // ppcoin: check genesis block
         {
             CValidationState state;
