@@ -11,17 +11,17 @@
 using namespace std;
 
 // Protocol switch time of v0.3 kernel protocol
-unsigned int nProtocolV03SwitchTime     = 1532136755;// 1363800000;<coingo.vip>
+unsigned int nProtocolV03SwitchTime     = 1545019186;// 1363800000;<coingo.vip>
 unsigned int nProtocolV03TestSwitchTime = 1359781000;
 // Protocol switch time of v0.4 kernel protocol
-unsigned int nProtocolV04SwitchTime     = 1537493555;//1399300000;<coingo.vip>
+unsigned int nProtocolV04SwitchTime     = 1545019186;//1399300000;<coingo.vip>
 unsigned int nProtocolV04TestSwitchTime = 1395700000;
 // Protocol switch time of v0.5 kernel protocol
 unsigned int nProtocolV05SwitchTime     = 1650504755;// 1461700000;<coingo.vip>
 unsigned int nProtocolV05TestSwitchTime = 1447700000;
 // Protocol switch time of v0.6 kernel protocol
 // supermajority hardfork: actual fork will happen later than switch time
-const unsigned int nProtocolV06SwitchTime     = 1513050000; // Tue 12 Dec 03:40:00 UTC 2017
+const unsigned int nProtocolV06SwitchTime     = 1545020000; // Tue 12 Dec 03:40:00 UTC 2017
 const unsigned int nProtocolV06TestSwitchTime = 1508198400; // Tue 17 Oct 00:00:00 UTC 2017
 
 

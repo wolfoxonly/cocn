@@ -34,9 +34,9 @@ QString DakeCoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("DAKE");//coingo.vip定义名字
-    case mBTC: return QString("mDAKE");
-    case uBTC: return QString::fromUtf8("μDAKE");
+    case BTC: return QString("COC");//coingo.vip定义名字
+    case mBTC: return QString("mCOC");
+    case uBTC: return QString::fromUtf8("μCOC");
     default: return QString("???");
     }
 }

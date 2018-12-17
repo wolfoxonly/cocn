@@ -1200,7 +1200,7 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
 
 int64 GetProofOfWorkReward(unsigned int nBits)
 {
-    return 0.000001 * COIN;//<coingo.vip>定义pow奖励
+    return 256.0 * COIN;//<coingo.vip>定义pow奖励
     CBigNum bnSubsidyLimit = MAX_MINT_PROOF_OF_WORK;
     CBigNum bnTarget;
     bnTarget.SetCompact(nBits);
@@ -1252,9 +1252,9 @@ int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
     printf("year ===== %d\n", year);
 
-    float rate = 20*pow(0.66,year);//coingo.vip
+    float rate = 40*pow(0.6,year);//coingo.vip
     printf("rate ===== %f\n", rate);
-    int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo
+    int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
 
     // if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%" PRI64d"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
@@ -3389,9 +3389,9 @@ bool InitBlockIndex() {
         //   vMerkleTree: 4a5e1e
 
         // Genesis block
-        const char* pszTimestamp = "The Times 17/6/2018 Dakecoin genesis generated.";// "Matonis 07-AUG-2012 Parallel Currencies And The Roadmap To Monetary Freedom";
+        const char* pszTimestamp = "The Times 17/12/2018 Cloud computing chain genesis generated.";// "Matonis 07-AUG-2012 Parallel Currencies And The Roadmap To Monetary Freedom";
         CTransaction txNew;
-        txNew.nTime = 1529233474;//<coingo.vip>
+        txNew.nTime = 1545019100;//<coingo.vip>
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(9999) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -3457,13 +3457,9 @@ bool InitBlockIndex() {
 
                  if (hashdata <= hashTarget)
                  {
-                     // Found a solution
-                     // printf("Found a solution ooooooooooooooooooooooookkkkk \n" );
-                    //  printf("block.nNonce 11111111111111 coingo.vip:%d \n" ,block.nNonce);
+
                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
                       block.nNonce = ByteReverse(nNonceFound);
-                    //  printf("block.nNonce 22222222 coingo.vip:%d \n" ,block.nNonce);
-                    //   printf("hashdata 33333 coingo.vip:%s\n", hashdata.ToString().c_str());
                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
                                     
                    
@@ -3472,16 +3468,6 @@ bool InitBlockIndex() {
              }
          }
 
-        //////////////////////////coingo.vipend/////////////////////////
-
-
-
-
-
-
-
-// printf("block.nNonce 11111111111111 coingo.vip:%d \n" ,block.nNonce);
-        //// debug print
         uint256 hash = block.GetHash();
     //    printf("block hash %s\n", hash.ToString().c_str());
     //    printf("hashGenesisBlock_offical %s\n", hashGenesisBlock.ToString().c_str());
@@ -5198,12 +5184,13 @@ CBlockTemplate* CreateNewBlock(CReserveKey& reservekey, CWallet* pwallet, bool f
           
            if(pindexPrev->nHeight == 0)
            {
-                pblock->vtx[0].vout[0].nValue = 1200000000 * COIN;//首块产量<coingo.vip>
+                pblock->vtx[0].vout[0].nValue = 200000000 * COIN;//首块产量<coingo.vip>
            }
            else
            {
-		
-             pblock->vtx[0].vout[0].nValue = reward;//coingo.vip
+		int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//pow产量衰减部分,262800
+
+             pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
            }
           
           
@@ -5422,7 +5409,7 @@ void DakeCoinMiner(CWallet *pwallet, bool fProofOfStake)
 
         if (pindexPrev->nHeight > 1000000000 )
         {//大于1000000000不让用pow了<coingo.vip>
-            printf("block height >1000 is not pow Minner is not use\n");
+            printf("block height >1000000000 is not pow Minner is not use\n");
             return;
         }
         //

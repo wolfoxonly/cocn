@@ -15,10 +15,10 @@
 #include <string>
 #include "uint256.h"
 
-#define PPCOIN_PORT  9930//<coingo.vip>端口号
-#define RPC_PORT     9931
-#define TESTNET_PORT 9940
-#define TESTNET_RPC_PORT 9941
+#define PPCOIN_PORT  9966//<coingo.vip>端口号
+#define RPC_PORT     9968
+#define TESTNET_PORT 9967
+#define TESTNET_RPC_PORT 9969
 
 extern bool fTestNet;
 extern unsigned char pchMessageStart[4];
