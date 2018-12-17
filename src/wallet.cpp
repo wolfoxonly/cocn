@@ -1285,7 +1285,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64> >& vecSend,
                     nFeeRet += nMoveToFee;
                 }
 
-                // CloudComputingChain: sub-cent change is moved to fee <coingo.vip>
+                // CloudComputingChain: sub-cent change is moved to fee <>
                 
                 if (nChange > 0 && nChange < MIN_TXOUT_AMOUNT)
                 {
@@ -1320,7 +1320,7 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64> >& vecSend,
                     CTxOut newTxOut(nChange, scriptChange);
 
                     // Never create dust outputs; if we would, just
-                    // add the dust to the fee.<coingo.vip>
+                    // add the dust to the fee.<>
                     
                     if (newTxOut.IsDust())
                     {

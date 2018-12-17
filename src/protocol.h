@@ -15,7 +15,7 @@
 #include <string>
 #include "uint256.h"
 
-#define PPCOIN_PORT  9966//<coingo.vip>端口号
+#define PPCOIN_PORT  9966//<>端口号
 #define RPC_PORT     9968
 #define TESTNET_PORT 9967
 #define TESTNET_RPC_PORT 9969

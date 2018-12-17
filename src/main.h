@@ -59,21 +59,21 @@ static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 /** Fake height value used in CCoins to signify they are only in the memory pool (since 0.8) */
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** No amount larger than this (in satoshi) is valid */
-// static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
-static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
+// static const int64 MAX_MONEY = 2000000000 * COIN;<>
+static const int64 MAX_MONEY = 1000000000 * COIN;//<>
 inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
-static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
-static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
-static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<coingo.vip>改最小限制
-static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<coingo.vip>最大挖到的利息值
-static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<coingo.vip>改最小限制
+static const int64 MIN_TX_FEE = 0 *COIN;//<>改最小转账限制
+static const int64 MAX_TX_FEE = 100 *COIN;//<>改最小转账限制
+static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<>改最小限制
+static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<>最大挖到的利息值
+static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<>改最小限制
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY_PPC = 500;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const int STAKE_TARGET_SPACING = 2 * 60;//改为2分钟了 10 * 60; // 10-minute block spacing 
-static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<coingo.vip>
+static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<>
 // static const int STAKE_MAX_AGE = 60 * 60 * 24 * 90; // stake age of full weight
-static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <coingo.vip>
+static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <>
 /** Maximum number of script-checking threads allowed */
 static const int MAX_SCRIPTCHECK_THREADS = 16;
 #ifdef USE_UPNP
@@ -83,7 +83,7 @@ static const int fHaveUPnP = false;
 #endif
 
 //static const uint256 hashGenesisBlockOfficial("0x0000000032fe677166d54963b62a4677d8957e87c508eaa4fd7eb1c880cd27e3");
-static const uint256 hashGenesisBlockOfficial("0x000000d80ec5afd2f398a352b8293093760acf14884a164be5b3b0a9995181ab");//<coingo.vip>校验
+static const uint256 hashGenesisBlockOfficial("0x000000d80ec5afd2f398a352b8293093760acf14884a164be5b3b0a9995181ab");//<>校验
 static const uint256 hashGenesisBlockTestNet("0x00000001f757bb737f6596503e17cd17b0658ce630cc727c0cca81aec47c9f06");
 
 static const int64 nMaxClockDrift = 2 * 60 * 60;        // two hours

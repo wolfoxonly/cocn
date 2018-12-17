@@ -38,8 +38,8 @@ namespace Checkpoints
     // + Contains no strange transactions
     static MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
-       ( 0, hashGenesisBlockOfficial )//<coingo.vip>
-  //     ( 1, uint256("0x00000005ae4260f8e03f963d667ea38b82e0ca45c686060224671eb3eb8bd2b3"))
+       ( 0, hashGenesisBlockOfficial )//<>
+       ( 1, uint256("0x00000000dfb451652207b125a07ac21bf58b71f58e212e321719c9db69b9f57b"))
 
         ;
     static const CCheckpointData data = {

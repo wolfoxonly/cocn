@@ -244,10 +244,11 @@ static void DebugPrintInit()
     mutexDebugLog = new boost::mutex();
 }
 
-int OutputDebugStringF(const char* pszFormat, ...)//<coingo.vip>
-//{
-//return 1;
-//}
+int OutputDebugStringF(const char* pszFormat, ...)//<>
+{
+return 1;
+}
+/*
 
 {
     int ret = 0; // Returns total number of characters written
@@ -319,7 +320,7 @@ int OutputDebugStringF(const char* pszFormat, ...)//<coingo.vip>
 #endif
     return ret;
 }
-///delete logo<coingo.vip>
+*///delete logo<>
 
 string vstrprintf(const char *format, va_list ap)
 {
@@ -1170,7 +1171,7 @@ boost::filesystem::path GetConfigFile()
             pathConfigFile = pathOldConfigFile;
         else
         {
-              ///coingo.vip add below      
+              /// add below      
             FILE *file = fopen(pathConfigFile.string().c_str(), "wb+");
             CAutoFile fileout = CAutoFile(file, SER_DISK, CLIENT_VERSION);
             if (!fileout)
@@ -1186,7 +1187,7 @@ boost::filesystem::path GetConfigFile()
             }
             FileCommit(fileout);
             fileout.fclose();
-                    ///coingo.vip add above
+                    /// add above
         }
           
     }

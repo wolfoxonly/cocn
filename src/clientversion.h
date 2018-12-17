@@ -28,7 +28,7 @@
 #define DAKECOIN_VERSION_MINOR       0
 #define DAKECOIN_VERSION_REVISION    0
 #define DAKECOIN_VERSION_BUILD       1
-//coingo.vip
+//
 
 // Copyright year (2009-this)
 // Todo: update this when changing our copyright comments in the source
