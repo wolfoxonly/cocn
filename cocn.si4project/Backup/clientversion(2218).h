@@ -2,13 +2,13 @@
 #define CLIENTVERSION_H
 
 #if defined(HAVE_CONFIG_H)
-#include "CloudComputingChain-config.h"
+#include "DakeCoin-config.h"
 #else
 //
 // client versioning and copyright year
 //
 
-// These need to be macros, as version.cpp's and CloudComputingChain-qt.rc's voodoo requires it
+// These need to be macros, as version.cpp's and DakeCoin-qt.rc's voodoo requires it
 #define CLIENT_VERSION_MAJOR       1
 #define CLIENT_VERSION_MINOR       0
 #define CLIENT_VERSION_REVISION    0

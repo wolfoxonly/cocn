@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2012 The CloudComputingChain developers
-// Copyright (c) 2011-2015 The CloudComputingChain developers
+// Copyright (c) 2009-2012 The DakeCoin developers
+// Copyright (c) 2011-2015 The DakeCoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -79,7 +79,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "CloudComputingChain3.0 Signed Message:\n";
+const string strMessageMagic = "DakeCoin3.0 Signed Message:\n";
 
 double dHashesPerSec = 0.0;
 int64 nHPSTimerStart = 0;
@@ -1807,7 +1807,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("CloudComputingChain-scriptch");
+    RenameThread("DakeCoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -1944,7 +1944,7 @@ bool CBlock::ConnectBlock(CValidationState &state, CBlockIndex* pindex, CCoinsVi
     pindex->nMint = nValueOut - nValueIn + nFees;
     pindex->nMoneySupply = (pindex->pprev? pindex->pprev->nMoneySupply : 0) + nValueOut - nValueIn;
 
-    // ppcoin: fees are not collected by miners as in CloudComputingChain
+    // ppcoin: fees are not collected by miners as in DakeCoin
     // ppcoin: fees are destroyed to compensate the entire network
     if (fDebug && GetBoolArg("-printcreation"))
         printf("ConnectBlock() : destroy=%s nFees=%" PRI64d"\n", FormatMoney(nFees).c_str(), nFees);
@@ -3349,7 +3349,7 @@ bool LoadBlockIndex()
     }
 
     printf("%s Network: genesis=0x%s nBitsLimit=0x%08x nBitsLimit =%d,nBitsInitial=0x%08x nStakeMinAge=%d nCoinbaseMaturity=%d nModifierInterval=%d\n",
-           fTestNet? "Test" : "CloudComputingChain", hashGenesisBlock.ToString().substr(0, 20).c_str(), bnProofOfWorkLimit.GetCompact(), bnProofOfWorkLimit.GetCompact(),bnInitialHashTarget.GetCompact(), nStakeMinAge, nCoinbaseMaturity, nModifierInterval);
+           fTestNet? "Test" : "DakeCoin", hashGenesisBlock.ToString().substr(0, 20).c_str(), bnProofOfWorkLimit.GetCompact(), bnProofOfWorkLimit.GetCompact(),bnInitialHashTarget.GetCompact(), nStakeMinAge, nCoinbaseMaturity, nModifierInterval);
 
     //
     // Load block index from databases
@@ -4839,7 +4839,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// CloudComputingChainMiner
+// DakeCoinMiner
 //
 
 
@@ -5295,10 +5295,10 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
 
     if (hash > hashTarget && pblock->IsProofOfWork())
-        return error("CloudComputingChainMiner : proof-of-work not meeting target");
+        return error("DakeCoinMiner : proof-of-work not meeting target");
 
     //// debug print
-    printf("CloudComputingChainMiner:\n");
+    printf("DakeCoinMiner:\n");
     printf("new block found  \n  hash: %s  \ntarget: %s\n", hash.GetHex().c_str(), hashTarget.GetHex().c_str());
     pblock->print();
     printf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue).c_str());
@@ -5307,7 +5307,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != hashBestChain)
-            return error("CloudComputingChainMiner : generated block is stale");
+            return error("DakeCoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -5321,16 +5321,16 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("CloudComputingChainMiner : ProcessBlock, block not accepted");
+            return error("DakeCoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
 }
 
 #ifdef TESTING
-void CloudComputingChainMiner(CWallet *pwallet, bool fProofOfStake, bool fGenerateSingleBlock)
+void DakeCoinMiner(CWallet *pwallet, bool fProofOfStake, bool fGenerateSingleBlock)
 #else
-void CloudComputingChainMiner(CWallet *pwallet, bool fProofOfStake)
+void DakeCoinMiner(CWallet *pwallet, bool fProofOfStake)
 #endif
 {
     printf("CPUMiner started for proof-of-%s\n", fProofOfStake? "stake" : "work");
@@ -5404,7 +5404,7 @@ void CloudComputingChainMiner(CWallet *pwallet, bool fProofOfStake)
             continue;
         }
 
-        printf("Running CloudComputingChainMiner with %" PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
+        printf("Running DakeCoinMiner with %" PRIszu" transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         if (pindexPrev->nHeight > 1000000000 )
@@ -5520,12 +5520,12 @@ void CloudComputingChainMiner(CWallet *pwallet, bool fProofOfStake)
     } }
     catch (boost::thread_interrupted)
     {
-        if(!fProofOfStake) printf("CloudComputingChainMiner terminated\n");
+        if(!fProofOfStake) printf("DakeCoinMiner terminated\n");
         throw;
     }
 }
 
-void GenerateCloudComputingChains(bool fGenerate, CWallet* pwallet)
+void GenerateDakeCoins(bool fGenerate, CWallet* pwallet)
 {
     static boost::thread_group* minerThreads = NULL;
 
@@ -5546,9 +5546,9 @@ void GenerateCloudComputingChains(bool fGenerate, CWallet* pwallet)
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
 #ifdef TESTING
-        minerThreads->create_thread(boost::bind(&CloudComputingChainMiner, pwallet, false, false));
+        minerThreads->create_thread(boost::bind(&DakeCoinMiner, pwallet, false, false));
 #else
-        minerThreads->create_thread(boost::bind(&CloudComputingChainMiner, pwallet, false));
+        minerThreads->create_thread(boost::bind(&DakeCoinMiner, pwallet, false));
 #endif
 }
 
@@ -5559,7 +5559,7 @@ void static ThreadStakeMinter(void* parg)
     CWallet* pwallet = (CWallet*)parg;
     try
     {
-        CloudComputingChainMiner(pwallet, true);
+        DakeCoinMiner(pwallet, true);
     }
     catch (boost::thread_interrupted) {
         printf("stakeminter thread interrupt\n");
