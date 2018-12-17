@@ -3441,7 +3441,7 @@ bool InitBlockIndex() {
          uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
          uint256 hashbuf[2];
          uint256& hashdata = *alignup<16>(hashbuf);
-         while(true)//<coingo.vip>校验
+         while(false)//<coingo.vip>校验
          {
              unsigned int nHashesDone = 0;
              unsigned int nNonceFound;
@@ -3476,7 +3476,7 @@ bool InitBlockIndex() {
         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
        // assert(block.hashMerkleRoot == uint256("0xece2718fca52c7c1c233fb9add9a7a4866794d8043fe75af407a9c59fa56cc79"));
         block.print();
-        assert(hash == hashGenesisBlock);//<coingo.vip>
+        //assert(hash == hashGenesisBlock);
         // ppcoin: check genesis block
         {
             CValidationState state;
