@@ -3404,7 +3404,7 @@ bool InitBlockIndex() {
         block.nTime    = 1529233474;// 1345084287;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
       //  block.nNonce   = 2179302059u;
-        block.nNonce = ByteReverse(10893457);//<coingo.vip>
+        block.nNonce = ByteReverse(6362388);//<coingo.vip>校验
         if (fTestNet)
         {
             block.nTime    = 1345090000;
@@ -3441,7 +3441,7 @@ bool InitBlockIndex() {
          uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
          uint256 hashbuf[2];
          uint256& hashdata = *alignup<16>(hashbuf);
-         while(true)//<coingo.vip>
+         while(false)//<coingo.vip>校验
          {
              unsigned int nHashesDone = 0;
              unsigned int nNonceFound;
@@ -3473,7 +3473,7 @@ bool InitBlockIndex() {
     //    printf("hashGenesisBlock_offical %s\n", hashGenesisBlock.ToString().c_str());
         printf("hashMerkleRoot %s\n", block.hashMerkleRoot.ToString().c_str());
         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
-        assert(block.hashMerkleRoot == uint256("0xf83b0208a18c129cdcd564aba299548370ae138b9d3913102f4f23ab3eb26dce"));//<coingo.vip>
+        assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
        // assert(block.hashMerkleRoot == uint256("0xece2718fca52c7c1c233fb9add9a7a4866794d8043fe75af407a9c59fa56cc79"));
         block.print();
         //assert(hash == hashGenesisBlock);
