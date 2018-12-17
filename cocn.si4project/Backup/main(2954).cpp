@@ -3401,7 +3401,7 @@ bool InitBlockIndex() {
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1545019100;// <coingo.vip>
+        block.nTime    = 1529233474;// 1345084287;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
       //  block.nNonce   = 2179302059u;
         block.nNonce = ByteReverse(6362388);//<coingo.vip>校验

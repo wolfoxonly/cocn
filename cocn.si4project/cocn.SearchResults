@@ -1,35 +1,57 @@
----- 200000000 Matches (30 in 17 files) ----
-blanktxv2.hex (test\util\data) line 1 : 02000000000000000000
-blanktxv2.json (test\util\data) line 12 :     "hex": "02000000000000000000"
-bloom_tests.cpp (src\test\TODO) line 177 : 0dab311e102207e3c0ee9234814cfbb1b659b83671618f45abc1326b9edcc77d552a4f2a805c0014104462e76fd4067b3a0aa42070082dcb0bf2f388b6495cf33d789904f07d0f55c40fbd4b82963c69b3dc31895d0c772c812b1d5fbcade15312ef1c0e8ebbb12dcd4ffffffffdcdc6023bbc9944a658ddc588e61eacb737ddf0a3cd24f113b5a8634c517fcd2000000008b4830450221008d6df731df5d32267954bd7d2dda2302b74c6c2a6aa5c0ca64ecbabc1af03c75022010e55c571d65da7701ae2da1956c442df81bbf076cdbac25133f99d98a9ed34c014104462e76fd4067b3a0aa42070082dcb0bf2f388b6495cf33d789904f07d0f55c40fbd4b82963c69b3dc31895d0c772c812b1d5fbcade15312ef1c0e8ebbb12dcd4ffffffffe15557cd5ce258f479dfd6dc6514edf6d7ed5b21fcfa4a038fd69f06b83ac76e010000008b483045022023b3e0ab071eb11de2eb1cc3a67261b866f86bf6867d4558165f7c8c8aca2d86022100dc6e1f53a91de3efe8f63512850811f26284b62f850c70ca73ed5de8771fb451014104462e76fd4067b3a0aa42070082dcb0bf2f388b6495cf33d789904f07d0f55c40fbd4b82963c69b3dc31895d0c772c812b1d5fbcade15312ef1c0e8ebbb12dcd4ffffffff01404b4c00000000001976a9142b6ba7c9d796b75eef7942fc9288edd37c32f5c388ac00000000010000000166d7577163c932b4f9690ca6a80b6e4eb001f0a2fa9023df5595602aae96ed8d000000008a4730440220262b42546302dfb654a229cefc86432b89628ff259dc87edd1154535b16a67e102207b4634c020a97c3e7bbd0d4d19da6aa2269ad9dded4026e896b213d73ca4b63f014104979b82d02226b3a4597523845754d44f13639e3bf2df5e82c6aab2bdc79687368b01b1ab8b19875ae3c90d661a3d0a33161dab29934edeb36aa01976be3baf8affffffff02404b4c00000000001976a9144854e695a02af0aeacb823ccbc272134561e0a1688ac40420f00000000001976a914abee93376d6b37b5c2940655a6fcaf1c8e74237988ac0000000001000000014e3f8ef2e91349a9059cb4f01e54ab2597c1387161d3da89919f7ea6acdbb371010000008c49304602210081f3183471a5ca22307c0800226f3ef9c353069e0773ac76bb580654d56aa523022100d4c56465bdc069060846f4fbf2f6b20520b2a80b08b168b31e66ddb9c694e240014104976c79848e18251612f8940875b2b08d06e6dc73b9840e8860c066b7e87432c477e9a59a453e71e6d76d5fe34058b800a098fc1740ce3012e8fc8a00c96af966ffffffff02c0e1e400000000001976a9144134e75a6fcb6042034aab5e18570cf1f844f54788ac404b4c00000000001976a9142b6ba7c9d796b75eef7942fc9288edd37c32f5c388ac00000000"), SER_NETWORK, PROTOCOL_VERSION);
-bloom_tests.cpp (src\test\TODO) line 365 :     CDataStream stream(ParseHex("0100000082bb869cf3a793432a66e826e05a6fc37469f8efb7421dc880670100000000007f16c5962e8bd963659c793ce370d95f093bc7e367117b3c30c1f8fdd0d9728776381b4d4c86041b554b85290701000000010000000000000000000000000000000000000000000000000000000000000000ffffffff07044c86041b0136ffffffff0100f2052a01000000434104eaafc2314def4ca98ac970241bcab022b9c1e1f4ea423a20f134c876f2c01ec0f0dd5b2e86e7168cefe0d81113c3807420ce13ad1357231a2252247d97a46a91ac000000000100000001bcad20a6a29827d1424f08989255120bf7f3e9e3cdaaa6bb31b0737fe048724300000000494830450220356e834b046cadc0f8ebb5a8a017b02de59c86305403dad52cd77b55af062ea10221009253cd6c119d4729b77c978e1e2aa19f5ea6e0e52b3f16e32fa608cd5bab753901ffffffff02008d380c010000001976a9142b4b8072ecbba129b6453c63e129e643207249ca88ac0065cd1d000000001976a9141b8dd13b994bcfc787b32aeadf58ccb3615cbd5488ac000000000100000003fdacf9b3eb077412e7a968d2e4f11b9a9dee312d666187ed77ee7d26af16cb0b000000008c493046022100ea1608e70911ca0de5af51ba57ad23b9a51db8d28f82c53563c56a05c20f5a87022100a8bdc8b4a8acc8634c6b420410150775eb7f2474f5615f7fccd65af30f310fbf01410465fdf49e29b06b9a1582287b6279014f834edc317695d125ef623c1cc3aaece245bd69fcad7508666e9c74a49dc9056d5fc14338ef38118dc4afae5fe2c585caffffffff309e1913634ecb50f3c4f83e96e70b2df071b497b8973a3e75429df397b5af83000000004948304502202bdb79c596a9ffc24e96f4386199aba386e9bc7b6071516e2b51dda942b3a1ed022100c53a857e76b724fc14d45311eac5019650d415c3abb5428f3aae16d8e69bec2301ffffffff2089e33491695080c9edc18a428f7d834db5b6d372df13ce2b1b0e0cbcb1e6c10000000049483045022100d4ce67c5896ee251c810ac1ff9ceccd328b497c8f553ab6e08431e7d40bad6b5022033119c0c2b7d792d31f1187779c7bd95aefd93d90a715586d73801d9b47471c601ffffffff0100714460030000001976a914c7b55141d097ea5df7a0ed330cf794376e53ec8d88ac0000000001000000045bf0e214aa4069a3e792ecee1e1bf0c1d397cde8dd08138f4b72a00681743447000000008b48304502200c45de8c4f3e2c1821f2fc878cba97b1e6f8807d94930713aa1c86a67b9bf1e40221008581abfef2e30f957815fc89978423746b2086375ca8ecf359c85c2a5b7c88ad01410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffffd669f7d7958d40fc59d2253d88e0f248e29b599c80bbcec344a83dda5f9aa72c000000008a473044022078124c8beeaa825f9e0b30bff96e564dd859432f2d0cb3b72d3d5d93d38d7e930220691d233b6c0f995be5acb03d70a7f7a65b6bc9bdd426260f38a1346669507a3601410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95fffffffff878af0d93f5229a68166cf051fd372bb7a537232946e0a46f53636b4dafdaa4000000008c493046022100c717d1714551663f69c3c5759bdbb3a0fcd3fab023abc0e522fe6440de35d8290221008d9cbe25bffc44af2b18e81c58eb37293fd7fe1c2e7b46fc37ee8c96c50ab1e201410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffff27f2b668859cd7f2f894aa0fd2d9e60963bcd07c88973f425f999b8cbfd7a1e2000000008c493046022100e00847147cbf517bcc2f502f3ddc6d284358d102ed20d47a8aa788a62f0db780022100d17b2d6fa84dcaf1c95d88d7e7c30385aecf415588d749afd3ec81f6022cecd701410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffff0100c817a8040000001976a914b6efd80d99179f4f4ff6f4dd0a007d018c385d2188ac000000000100000001834537b2f1ce8ef9373a258e10545ce5a50b758df616cd4356e0032554ebd3c4000000008b483045022100e68f422dd7c34fdce11eeb4509ddae38201773dd62f284e8aa9d96f85099d0b002202243bd399ff96b649a0fad05fa759d6a882f0af8c90cf7632c2840c29070aec20141045e58067e815c2f464c6a2a15f987758374203895710c2d452442e28496ff38ba8f5fd901dc20e29e88477167fe4fc299bf818fd0d9e1632d467b2a3d9503b1aaffffffff0280d7e636030000001976a914f34c3e10eb387efe872acb614c89e78bfca7815d88ac404b4c00000000001976a914a84e272933aaf87e1715d7786c51dfaeb5b65a6f88ac00000000010000000143ac81c8e6f6ef307dfe17f3d906d999e23e0189fda838c5510d850927e03ae7000000008c4930460221009c87c344760a64cb8ae6685a3eec2c1ac1bed5b88c87de51acd0e124f266c16602210082d07c037359c3a257b5c63ebd90f5a5edf97b2ac1c434b08ca998839f346dd40141040ba7e521fa7946
-bloom_tests.cpp (src\test\TODO) line 413 :     CDataStream stream(ParseHex("0100000082bb869cf3a793432a66e826e05a6fc37469f8efb7421dc880670100000000007f16c5962e8bd963659c793ce370d95f093bc7e367117b3c30c1f8fdd0d9728776381b4d4c86041b554b85290701000000010000000000000000000000000000000000000000000000000000000000000000ffffffff07044c86041b0136ffffffff0100f2052a01000000434104eaafc2314def4ca98ac970241bcab022b9c1e1f4ea423a20f134c876f2c01ec0f0dd5b2e86e7168cefe0d81113c3807420ce13ad1357231a2252247d97a46a91ac000000000100000001bcad20a6a29827d1424f08989255120bf7f3e9e3cdaaa6bb31b0737fe048724300000000494830450220356e834b046cadc0f8ebb5a8a017b02de59c86305403dad52cd77b55af062ea10221009253cd6c119d4729b77c978e1e2aa19f5ea6e0e52b3f16e32fa608cd5bab753901ffffffff02008d380c010000001976a9142b4b8072ecbba129b6453c63e129e643207249ca88ac0065cd1d000000001976a9141b8dd13b994bcfc787b32aeadf58ccb3615cbd5488ac000000000100000003fdacf9b3eb077412e7a968d2e4f11b9a9dee312d666187ed77ee7d26af16cb0b000000008c493046022100ea1608e70911ca0de5af51ba57ad23b9a51db8d28f82c53563c56a05c20f5a87022100a8bdc8b4a8acc8634c6b420410150775eb7f2474f5615f7fccd65af30f310fbf01410465fdf49e29b06b9a1582287b6279014f834edc317695d125ef623c1cc3aaece245bd69fcad7508666e9c74a49dc9056d5fc14338ef38118dc4afae5fe2c585caffffffff309e1913634ecb50f3c4f83e96e70b2df071b497b8973a3e75429df397b5af83000000004948304502202bdb79c596a9ffc24e96f4386199aba386e9bc7b6071516e2b51dda942b3a1ed022100c53a857e76b724fc14d45311eac5019650d415c3abb5428f3aae16d8e69bec2301ffffffff2089e33491695080c9edc18a428f7d834db5b6d372df13ce2b1b0e0cbcb1e6c10000000049483045022100d4ce67c5896ee251c810ac1ff9ceccd328b497c8f553ab6e08431e7d40bad6b5022033119c0c2b7d792d31f1187779c7bd95aefd93d90a715586d73801d9b47471c601ffffffff0100714460030000001976a914c7b55141d097ea5df7a0ed330cf794376e53ec8d88ac0000000001000000045bf0e214aa4069a3e792ecee1e1bf0c1d397cde8dd08138f4b72a00681743447000000008b48304502200c45de8c4f3e2c1821f2fc878cba97b1e6f8807d94930713aa1c86a67b9bf1e40221008581abfef2e30f957815fc89978423746b2086375ca8ecf359c85c2a5b7c88ad01410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffffd669f7d7958d40fc59d2253d88e0f248e29b599c80bbcec344a83dda5f9aa72c000000008a473044022078124c8beeaa825f9e0b30bff96e564dd859432f2d0cb3b72d3d5d93d38d7e930220691d233b6c0f995be5acb03d70a7f7a65b6bc9bdd426260f38a1346669507a3601410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95fffffffff878af0d93f5229a68166cf051fd372bb7a537232946e0a46f53636b4dafdaa4000000008c493046022100c717d1714551663f69c3c5759bdbb3a0fcd3fab023abc0e522fe6440de35d8290221008d9cbe25bffc44af2b18e81c58eb37293fd7fe1c2e7b46fc37ee8c96c50ab1e201410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffff27f2b668859cd7f2f894aa0fd2d9e60963bcd07c88973f425f999b8cbfd7a1e2000000008c493046022100e00847147cbf517bcc2f502f3ddc6d284358d102ed20d47a8aa788a62f0db780022100d17b2d6fa84dcaf1c95d88d7e7c30385aecf415588d749afd3ec81f6022cecd701410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffff0100c817a8040000001976a914b6efd80d99179f4f4ff6f4dd0a007d018c385d2188ac000000000100000001834537b2f1ce8ef9373a258e10545ce5a50b758df616cd4356e0032554ebd3c4000000008b483045022100e68f422dd7c34fdce11eeb4509ddae38201773dd62f284e8aa9d96f85099d0b002202243bd399ff96b649a0fad05fa759d6a882f0af8c90cf7632c2840c29070aec20141045e58067e815c2f464c6a2a15f987758374203895710c2d452442e28496ff38ba8f5fd901dc20e29e88477167fe4fc299bf818fd0d9e1632d467b2a3d9503b1aaffffffff0280d7e636030000001976a914f34c3e10eb387efe872acb614c89e78bfca7815d88ac404b4c00000000001976a914a84e272933aaf87e1715d7786c51dfaeb5b65a6f88ac00000000010000000143ac81c8e6f6ef307dfe17f3d906d999e23e0189fda838c5510d850927e03ae7000000008c4930460221009c87c344760a64cb8ae6685a3eec2c1ac1bed5b88c87de51acd0e124f266c16602210082d07c037359c3a257b5c63ebd90f5a5edf97b2ac1c434b08ca998839f346dd40141040ba7e521fa7946
-bloom_tests.cpp (src\test\TODO) line 439 :     CDataStream stream(ParseHex("0100000082bb869cf3a793432a66e826e05a6fc37469f8efb7421dc880670100000000007f16c5962e8bd963659c793ce370d95f093bc7e367117b3c30c1f8fdd0d9728776381b4d4c86041b554b85290701000000010000000000000000000000000000000000000000000000000000000000000000ffffffff07044c86041b0136ffffffff0100f2052a01000000434104eaafc2314def4ca98ac970241bcab022b9c1e1f4ea423a20f134c876f2c01ec0f0dd5b2e86e7168cefe0d81113c3807420ce13ad1357231a2252247d97a46a91ac000000000100000001bcad20a6a29827d1424f08989255120bf7f3e9e3cdaaa6bb31b0737fe048724300000000494830450220356e834b046cadc0f8ebb5a8a017b02de59c86305403dad52cd77b55af062ea10221009253cd6c119d4729b77c978e1e2aa19f5ea6e0e52b3f16e32fa608cd5bab753901ffffffff02008d380c010000001976a9142b4b8072ecbba129b6453c63e129e643207249ca88ac0065cd1d000000001976a9141b8dd13b994bcfc787b32aeadf58ccb3615cbd5488ac000000000100000003fdacf9b3eb077412e7a968d2e4f11b9a9dee312d666187ed77ee7d26af16cb0b000000008c493046022100ea1608e70911ca0de5af51ba57ad23b9a51db8d28f82c53563c56a05c20f5a87022100a8bdc8b4a8acc8634c6b420410150775eb7f2474f5615f7fccd65af30f310fbf01410465fdf49e29b06b9a1582287b6279014f834edc317695d125ef623c1cc3aaece245bd69fcad7508666e9c74a49dc9056d5fc14338ef38118dc4afae5fe2c585caffffffff309e1913634ecb50f3c4f83e96e70b2df071b497b8973a3e75429df397b5af83000000004948304502202bdb79c596a9ffc24e96f4386199aba386e9bc7b6071516e2b51dda942b3a1ed022100c53a857e76b724fc14d45311eac5019650d415c3abb5428f3aae16d8e69bec2301ffffffff2089e33491695080c9edc18a428f7d834db5b6d372df13ce2b1b0e0cbcb1e6c10000000049483045022100d4ce67c5896ee251c810ac1ff9ceccd328b497c8f553ab6e08431e7d40bad6b5022033119c0c2b7d792d31f1187779c7bd95aefd93d90a715586d73801d9b47471c601ffffffff0100714460030000001976a914c7b55141d097ea5df7a0ed330cf794376e53ec8d88ac0000000001000000045bf0e214aa4069a3e792ecee1e1bf0c1d397cde8dd08138f4b72a00681743447000000008b48304502200c45de8c4f3e2c1821f2fc878cba97b1e6f8807d94930713aa1c86a67b9bf1e40221008581abfef2e30f957815fc89978423746b2086375ca8ecf359c85c2a5b7c88ad01410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffffd669f7d7958d40fc59d2253d88e0f248e29b599c80bbcec344a83dda5f9aa72c000000008a473044022078124c8beeaa825f9e0b30bff96e564dd859432f2d0cb3b72d3d5d93d38d7e930220691d233b6c0f995be5acb03d70a7f7a65b6bc9bdd426260f38a1346669507a3601410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95fffffffff878af0d93f5229a68166cf051fd372bb7a537232946e0a46f53636b4dafdaa4000000008c493046022100c717d1714551663f69c3c5759bdbb3a0fcd3fab023abc0e522fe6440de35d8290221008d9cbe25bffc44af2b18e81c58eb37293fd7fe1c2e7b46fc37ee8c96c50ab1e201410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffff27f2b668859cd7f2f894aa0fd2d9e60963bcd07c88973f425f999b8cbfd7a1e2000000008c493046022100e00847147cbf517bcc2f502f3ddc6d284358d102ed20d47a8aa788a62f0db780022100d17b2d6fa84dcaf1c95d88d7e7c30385aecf415588d749afd3ec81f6022cecd701410462bb73f76ca0994fcb8b4271e6fb7561f5c0f9ca0cf6485261c4a0dc894f4ab844c6cdfb97cd0b60ffb5018ffd6238f4d87270efb1d3ae37079b794a92d7ec95ffffffff0100c817a8040000001976a914b6efd80d99179f4f4ff6f4dd0a007d018c385d2188ac000000000100000001834537b2f1ce8ef9373a258e10545ce5a50b758df616cd4356e0032554ebd3c4000000008b483045022100e68f422dd7c34fdce11eeb4509ddae38201773dd62f284e8aa9d96f85099d0b002202243bd399ff96b649a0fad05fa759d6a882f0af8c90cf7632c2840c29070aec20141045e58067e815c2f464c6a2a15f987758374203895710c2d452442e28496ff38ba8f5fd901dc20e29e88477167fe4fc299bf818fd0d9e1632d467b2a3d9503b1aaffffffff0280d7e636030000001976a914f34c3e10eb387efe872acb614c89e78bfca7815d88ac404b4c00000000001976a914a84e272933aaf87e1715d7786c51dfaeb5b65a6f88ac00000000010000000143ac81c8e6f6ef307dfe17f3d906d999e23e0189fda838c5510d850927e03ae7000000008c4930460221009c87c344760a64cb8ae6685a3eec2c1ac1bed5b88c87de51acd0e124f266c16602210082d07c037359c3a257b5c63ebd90f5a5edf97b2ac1c434b08ca998839f346dd40141040ba7e521fa7946
-DakeCoin-util-test.json (test\util\data) line 145 :     "args": ["02000000000100000000000000000000000000"],
-DakeCoin-util-test.json (test\util\data) line 150 :     "args": ["-json", "02000000000100000000000000000000000000"],
-test.functional.decodescript.DecodeScriptTest.decoderawtransaction_asm_sighashtype in decodescript.py (test\functional) :         tx = '01000000018d1f5635abd06e2c7e2ddf58dc85b3de111e4ad6e0ab51bb0dcf5e84126d927300000000fdfe0000483045022100ae3b4e589dfc9d48cb82d41008dc5fa6a86f94d5c54f9935531924602730ab8002202f88cf464414c4ed9fa11b773c5ee944f66e9b05cc1e51d97abc22ce098937ea01483045022100b44883be035600e9328a01b66c7d8439b74db64187e76b99a68f7893b701d5380220225bf286493e4c4adcf928c40f785422572eb232f84a0b83b0dea823c3a19c75014c695221020743d44be989540d27b1b4bbbcfd17721c337cb6bc9af20eb8a32520b393532f2102c0120a1dda9e51a938d39ddd9fe0ebc45ea97e1d27a7cbd671d5431416d3dd87210213820eb3d5f509d7438c9eeecb4157b2f595105e7cd564b3cdbb9ead3da41eed53aeffffffff02611e0000000000001976a914dc863734a218bfe83ef770ee9d41a27f824a6e5688acee2a02000000000017a9142a5edea39971049a540474c6a99edf0aa4074c588700000000'
-test.functional.decodescript.DecodeScriptTest.decoderawtransaction_asm_sighashtype in decodescript.py (test\functional) :         tx = '01000000015ded05872fdbda629c7d3d02b194763ce3b9b1535ea884e3c8e765d42e316724020000006b48304502204c10d4064885c42638cbff3585915b322de33762598321145ba033fc796971e2022100bb153ad3baa8b757e30a2175bd32852d2e1cb9080f84d7e32fcdfd667934ef1b012103163c0ff73511ea1743fb5b98384a2ff09dd06949488028fd819f4d83f56264efffffffff0200000000000000000b6a0930060201000201000180380100000000001976a9141cabd296e753837c086da7a45a6c2fe0d49d7b7b88ac00000000'
-test.functional.decodescript.DecodeScriptTest.decoderawtransaction_asm_sighashtype in decodescript.py (test\functional) :         tx = '01000000018d1f5635abd06e2c7e2ddf58dc85b3de111e4ad6e0ab51bb0dcf5e84126d927300000000fdfe0000483045022100ae3b4e589dfc9d48cb82d41008dc5fa6a86f94d5c54f9935531924602730ab8002202f88cf464414c4ed9fa11b773c5ee944f66e9b05cc1e51d97abc22ce098937ea01483045022100b44883be035600e9328a01b66c7d8439b74db64187e76b99a68f7893b701d5380220225bf286493e4c4adcf928c40f785422572eb232f84a0b83b0dea823c3a19c75014c695221020743d44be989540d27b1b4bbbcfd17721c337cb6bc9af20eb8a32520b393532f2102c0120a1dda9e51a938d39ddd9fe0ebc45ea97e1d27a7cbd671d5431416d3dd87210213820eb3d5f509d7438c9eeecb4157b2f595105e7cd564b3cdbb9ead3da41eed53aeffffffff02611e0000000000001976a914301102070101010101010102060101010101010188acee2a02000000000017a91430110207010101010101010206010101010101018700000000'
-histogram.cc (src\leveldb\util) line 25 :   180000000, 200000000, 250000000, 300000000, 350000000, 400000000,
-histogram.cc (src\leveldb\util) line 27 :   1000000000, 1200000000, 1400000000, 1600000000, 1800000000, 2000000000,
+---- coingo Matches (51 in 14 files) ----
+CAddrMan::Good_ in addrman.cpp (src) :     printf("Moving %s to tried\n", addr.ToString().c_str());//coingo.vip,此处校验节点
+CAddrMan in addrman.h (src) :     bool Add(const std::vector<CAddress> &vAddr, const CNetAddr& source, int64 nTimePenalty = 0)//coingo.vip决定是否加成功
+Checkpoints in checkpoints.cpp (src) :        ( 0, hashGenesisBlockOfficial )//<coingo.vip>
+checkpointsync.cpp (src) line 72 : // const std::string CSyncCheckpoint::strMainPubKey = "04c0c707c28533fd5c9f79d2d3a2d80dff259ad8f915241cd14608fb9bc07c74830efe8438f2b272a866b4af5e0c2cc2a9909972aefbd976937e39f46bb38c277c";<coingo.vip>
+ClientModel::getLastBlockDate in clientmodel.cpp (src\qt) :         return QDateTime::fromTime_t(1231006505); // Genesis block's time<coingo.vip>
+clientversion.h (src) line 31 : //coingo.vip
+CloudComputingChainUnits::name in DakeCoinunits.cpp (src\qt) :     case BTC: return QString("COC");//coingo.vip定义名字
+kernel.cpp (src) line 14 : unsigned int nProtocolV03SwitchTime     = 1545019186;// 1363800000;<coingo.vip>
+kernel.cpp (src) line 17 : unsigned int nProtocolV04SwitchTime     = 1545019186;//1399300000;<coingo.vip>
+kernel.cpp (src) line 20 : unsigned int nProtocolV05SwitchTime     = 1650504755;// 1461700000;<coingo.vip>
+CTxOut::IsDust in main.cpp (src) :     return ((nValue*1000.0)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);//fixed coingo.vip
+GetProofOfWorkReward in main.cpp (src) :     return 256.0 * COIN;//<coingo.vip>定义pow奖励
+main.cpp (src) line 1235 : int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
+GetProofOfStakeReward in main.cpp (src) :     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
+GetProofOfStakeReward in main.cpp (src) :     float rate = 40*pow(0.6,year);//coingo.vip
+GetProofOfStakeReward in main.cpp (src) :     int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
+CBlock::CheckBlock in main.cpp (src) :     // Check coinbase reward coingo.vip
+InitBlockIndex in main.cpp (src) :         txNew.nTime = 1545019100;//<coingo.vip>
+InitBlockIndex in main.cpp (src) :         block.nNonce = ByteReverse(6362388);//<coingo.vip>校验
+InitBlockIndex in main.cpp (src) :          while(true)//<coingo.vip>校验
+InitBlockIndex in main.cpp (src) :                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
+InitBlockIndex in main.cpp (src) :                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
+InitBlockIndex in main.cpp (src) :         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
+InitBlockIndex in main.cpp (src) :         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
+InitBlockIndex in main.cpp (src) :         assert(hash == hashGenesisBlock);//<coingo.vip>
+InitBlockIndex in main.cpp (src) :             assert(block.CheckBlock(state));//<coingo.vip>
 CreateNewBlock in main.cpp (src) :                 pblock->vtx[0].vout[0].nValue = 200000000 * COIN;//首块产量<coingo.vip>
+CreateNewBlock in main.cpp (src) :              pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
+CloudComputingChainMiner in main.cpp (src) :         {//大于1000000000不让用pow了<coingo.vip>
 main.h (src) line 62 : // static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
+main.h (src) line 63 : static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
+main.h (src) line 65 : static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
+main.h (src) line 66 : static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
+main.h (src) line 67 : static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<coingo.vip>改最小限制
 main.h (src) line 68 : static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<coingo.vip>最大挖到的利息值
-test.functional.test_framework.siphash.siphash256 in siphash.py (test\functional\test_framework) :     v3 ^= 0x2000000000000000
-test.functional.test_framework.siphash.siphash256 in siphash.py (test\functional\test_framework) :     v0 ^= 0x2000000000000000
-txcreate1.hex (test\util\data) line 1 : 02000000031f5c38dfcf6f1a5f5a87c416076d392c87e6d41970d5ad5e477a02d66bde97580000000000ffffffff7cca453133921c50d5025878f7f738d1df891fd359763331935784cf6b9c82bf1200000000fffffffffccd319e04a996c96cfc0bf4c07539aa90bd0b1a700ef72fae535d6504f9a6220100000000ffffffff0280a81201000000001976a9141fc11f39be1729bf973a7ab6a615ca4729d6457488ac0084d717000000001976a914f2d4db28cad6502226ee484ae24505c2885cb12d88ac00000000
-txcreate1.json (test\util\data) line 65 :     "hex": "02000000031f5c38dfcf6f1a5f5a87c416076d392c87e6d41970d5ad5e477a02d66bde97580000000000ffffffff7cca453133921c50d5025878f7f738d1df891fd359763331935784cf6b9c82bf1200000000fffffffffccd319e04a996c96cfc0bf4c07539aa90bd0b1a700ef72fae535d6504f9a6220100000000ffffffff0280a81201000000001976a9141fc11f39be1729bf973a7ab6a615ca4729d6457488ac0084d717000000001976a914f2d4db28cad6502226ee484ae24505c2885cb12d88ac00000000"
-txcreate2.hex (test\util\data) line 1 : 02000000000100000000000000000000000000
-txcreate2.json (test\util\data) line 21 :     "hex": "02000000000100000000000000000000000000"
-txcreatemultisig5.json (test\util\data) line 25 :     "hex": "02000000000100e1f5050000000017a914a4051c02398868af83f28f083208fae99a7692638700000000"
-tx_invalid.json (src\test\data) line 69 :  "01000000020001000000000000000000000000000000000000000000000000000000000000000000004948304502203a0f5f0e1f2bdbcd04db3061d18f3af70e07f4f467cbc1b8116f267025f5360b022100c792b6e215afc5afc721a351ec413e714305cb749aae3d7fee76621313418df10101000000000200000000000000000000000000000000000000000000000000000000000000000000484730440220201dc2d030e380e8f9cfb41b442d930fa5a685bb2c8db5906671f865507d0670022018d9e7a8d4c8d86a73c2a724ee38ef983ec249827e0e464841735955c707ece98101000000010100000000000000015100000000", true]
-tx_valid.json (src\test\data) line 38 : "01000000023d6cf972d4dff9c519eff407ea800361dd0a121de1da8b6f4138a2f25de864b4000000008a4730440220ffda47bfc776bcd269da4832626ac332adfca6dd835e8ecd83cd1ebe7d709b0e022049cffa1cdc102a0b56e0e04913606c70af702a1149dc3b305ab9439288fee090014104266abb36d66eb4218a6dd31f09bb92cf3cfa803c7ea72c1fc80a50f919273e613f895b855fb7465ccbc8919ad1bd4a306c783f22cd3227327694c4fa4c1c439affffffff21ebc9ba20594737864352e95b727f1a565756f9d365083eb1a8596ec98c97b7010000008a4730440220503ff10e9f1e0de731407a4a245531c9ff17676eda461f8ceeb8c06049fa2c810220c008ac34694510298fa60b3f000df01caa244f165b727d4896eb84f81e46bcc4014104266abb36d66eb4218a6dd31f09bb92cf3cfa803c7ea72c1fc80a50f919273e613f895b855fb7465ccbc8919ad1bd4a306c783f22cd3227327694c4fa4c1c439affffffff01f0da5200000000001976a914857ccd42dded6df32949d4646dfa10a92458cfaa88ac00000000", true],
-tx_valid.json (src\test\data) line 44 : "01000000020002000000000000000000000000000000000000000000000000000000000000000000000151ffffffff0001000000000000000000000000000000000000000000000000000000000000000000006b483045022100c9cdd08798a28af9d1baf44a6c77bcc7e279f47dc487c8c899911bc48feaffcc0220503c5c50ae3998a733263c5c0f7061b483e2b56c4c41b456e7d2f5a78a74c077032102d5c25adb51b61339d2b05315791e21bbe80ea470a49db0135720983c905aace0ffffffff010000000000000000015100000000", true],
-tx_valid.json (src\test\data) line 76 :  "010000000200010000000000000000000000000000000000000000000000000000000000000000000049483045022100d180fd2eb9140aeb4210c9204d3f358766eb53842b2a9473db687fa24b12a3cc022079781799cd4f038b85135bbe49ec2b57f306b2bb17101b17f71f000fcab2b6fb01ffffffff0002000000000000000000000000000000000000000000000000000000000000000000004847304402205f7530653eea9b38699e476320ab135b74771e1c48b81a5d041e2ca84b9be7a802200ac8d1f40fb026674fe5a5edd3dea715c27baa9baca51ed45ea750ac9dc0a55e81ffffffff010100000000000000015100000000", true],
-tx_valid.json (src\test\data) line 81 :  "01000000020001000000000000000000000000000000000000000000000000000000000000000000004948304502203a0f5f0e1f2bdbcd04db3061d18f3af70e07f4f467cbc1b8116f267025f5360b022100c792b6e215afc5afc721a351ec413e714305cb749aae3d7fee76621313418df101010000000002000000000000000000000000000000000000000000000000000000000000000000004847304402205f7530653eea9b38699e476320ab135b74771e1c48b81a5d041e2ca84b9be7a802200ac8d1f40fb026674fe5a5edd3dea715c27baa9baca51ed45ea750ac9dc0a55e81ffffffff010100000000000000015100000000", true]
-test.functional.test_framework.util.check_json_precision in util.py (test\functional\test_framework) :     if satoshis != 2000000000000003:
----- 200000000 Search Errors Encountered (129) ----
-The following 129 files could not be processed:
+main.h (src) line 69 : static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<coingo.vip>改最小限制
+main.h (src) line 74 : static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<coingo.vip>
+main.h (src) line 76 : static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <coingo.vip>
+main.h (src) line 86 : static const uint256 hashGenesisBlockOfficial("0x000000559e2eac4a9686b3111f586b618f187c63bdaa7c278f3b68325f75f9a5");//<coingo.vip>校验
+net.cpp (src) line 352 : bool GetMyExternalIP(CNetAddr& ipRet)//<coingo.vip>
+ConnectNode in net.cpp (src) :         pszDest ? pszDest : addrConnect.ToString().c_str());//coingo.vip,ljn校验节点
+ConnectNode in net.cpp (src) : 			printf("IsLocal(addrConnect) judge fail");//coingo.vip,ljn
+ConnectNode in net.cpp (src) :     printf("trying connection %s lastseen=%.1fhrs\n",//coingo.vip,ljn校验节点
+net.cpp (src) line 1184 : //<coingo.vip>默认节点
+protocol.h (src) line 18 : #define PPCOIN_PORT  9966//<coingo.vip>端口号
+util.cpp (src) line 247 : int OutputDebugStringF(const char* pszFormat, ...)//<coingo.vip>
+util.cpp (src) line 322 : ///delete logo<coingo.vip>
+GetConfigFile in util.cpp (src) :               ///coingo.vip add below      
+GetConfigFile in util.cpp (src) :                     ///coingo.vip add above
+CWallet::CreateTransaction in wallet.cpp (src) :                 // CloudComputingChain: sub-cent change is moved to fee <coingo.vip>
+CWallet::CreateTransaction in wallet.cpp (src) :                     // add the dust to the fee.<coingo.vip>
+---- coingo Search Errors Encountered (253) ----
+The following 253 files could not be processed:
 D:\SI\cocn\logo\images\about.png : File could not be opened.
 D:\SI\cocn\src\qt\res\images\about.png : File could not be opened.
 D:\SI\cocn\logo\icons\add.png : File could not be opened.
@@ -69,22 +91,142 @@ D:\SI\cocn\logo\icons\connect3_16.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\connect3_16.png : File could not be opened.
 D:\SI\cocn\logo\icons\connect4_16.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\connect4_16.png : File could not be opened.
+D:\SI\cocn\src\DakeCoin-cli-res.rc : File could not be opened.
+D:\SI\cocn\doc\man\DakeCoin-cli.1 : File could not be opened.
+D:\SI\cocn\contrib\DakeCoin-cli.bash-completion : File could not be opened.
+D:\SI\cocn\src\DakeCoin-cli.cpp : File could not be opened.
+D:\SI\cocn\src\DakeCoin-config.h.in : File could not be opened.
+D:\SI\cocn\src\qt\res\DakeCoin-qt-res.rc : File could not be opened.
+D:\SI\cocn\doc\man\DakeCoin-qt.1 : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-qt.desktop : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-qt.install : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-qt.lintian-overrides : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-qt.manpages : File could not be opened.
+D:\SI\cocn\contrib\DakeCoin-qt.pro : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-qt.protocol : File could not be opened.
+D:\SI\cocn\doc\man\DakeCoin-tx.1 : File could not be opened.
+D:\SI\cocn\contrib\DakeCoin-tx.bash-completion : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-tx.bash-completion : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-tx.install : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoin-tx.manpages : File could not be opened.
+D:\SI\cocn\test\util\data\DakeCoin-util-test.json : File could not be opened.
+D:\SI\cocn\test\util\DakeCoin-util-test.py : File could not be opened.
+D:\SI\cocn\contrib\debian\examples\DakeCoin.conf : File could not be opened.
+D:\SI\cocn\contrib\rpm\DakeCoin.fc : File could not be opened.
+D:\SI\cocn\logo\icons\DakeCoin.icns : File could not be opened.
+D:\SI\cocn\src\qt\res\icons\DakeCoin.icns : File could not be opened.
+D:\SI\cocn\logo\icons\DakeCoin.ico : File could not be opened.
+D:\SI\cocn\logo\pixmaps\DakeCoin.ico : File could not be opened.
+D:\SI\cocn\share\pixmaps\DakeCoin.ico : File could not be opened.
+D:\SI\cocn\src\qt\res\icons\DakeCoin.ico : File could not be opened.
+D:\SI\cocn\contrib\rpm\DakeCoin.if : File could not be opened.
 D:\SI\cocn\logo\icons\DakeCoin.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\DakeCoin.png : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoin.qrc : File could not be opened.
+D:\SI\cocn\contrib\rpm\DakeCoin.spec : File could not be opened.
+D:\SI\cocn\src\qt\res\src\DakeCoin.svg : File could not be opened.
+D:\SI\cocn\contrib\rpm\DakeCoin.te : File could not be opened.
 D:\SI\cocn\logo\pixmaps\DakeCoin128.png : File could not be opened.
 D:\SI\cocn\share\pixmaps\DakeCoin128.png : File could not be opened.
+D:\SI\cocn\logo\pixmaps\DakeCoin128.xpm : File could not be opened.
+D:\SI\cocn\share\pixmaps\DakeCoin128.xpm : File could not be opened.
 D:\SI\cocn\logo\pixmaps\DakeCoin16.png : File could not be opened.
 D:\SI\cocn\share\pixmaps\DakeCoin16.png : File could not be opened.
+D:\SI\cocn\logo\pixmaps\DakeCoin16.xpm : File could not be opened.
+D:\SI\cocn\share\pixmaps\DakeCoin16.xpm : File could not be opened.
 D:\SI\cocn\logo\pixmaps\DakeCoin256.png : File could not be opened.
 D:\SI\cocn\share\pixmaps\DakeCoin256.png : File could not be opened.
+D:\SI\cocn\logo\pixmaps\DakeCoin256.xpm : File could not be opened.
+D:\SI\cocn\share\pixmaps\DakeCoin256.xpm : File could not be opened.
 D:\SI\cocn\logo\pixmaps\DakeCoin32.png : File could not be opened.
 D:\SI\cocn\share\pixmaps\DakeCoin32.png : File could not be opened.
+D:\SI\cocn\logo\pixmaps\DakeCoin32.xpm : File could not be opened.
+D:\SI\cocn\share\pixmaps\DakeCoin32.xpm : File could not be opened.
 D:\SI\cocn\logo\pixmaps\DakeCoin64.png : File could not be opened.
 D:\SI\cocn\share\pixmaps\DakeCoin64.png : File could not be opened.
+D:\SI\cocn\logo\pixmaps\DakeCoin64.xpm : File could not be opened.
+D:\SI\cocn\share\pixmaps\DakeCoin64.xpm : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoinaddressvalidator.cpp : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoinaddressvalidator.h : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoinamountfield.cpp : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoinamountfield.h : File could not be opened.
+D:\SI\cocn\src\DakeCoind-res.rc : File could not be opened.
+D:\SI\cocn\doc\man\DakeCoind.1 : File could not be opened.
+D:\SI\cocn\contrib\DakeCoind.bash-completion : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoind.bash-completion : File could not be opened.
+D:\SI\cocn\contrib\init\DakeCoind.conf : File could not be opened.
+D:\SI\cocn\src\DakeCoind.cpp : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoind.examples : File could not be opened.
+D:\SI\cocn\contrib\init\DakeCoind.init : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoind.install : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoind.lintian-overrides : File could not be opened.
+D:\SI\cocn\contrib\debian\DakeCoind.manpages : File could not be opened.
+D:\SI\cocn\contrib\init\DakeCoind.openrc : File could not be opened.
+D:\SI\cocn\contrib\init\DakeCoind.openrcconf : File could not be opened.
+D:\SI\cocn\contrib\init\DakeCoind.service : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoingui.cpp : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoingui.h : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoinstrings.cpp : File could not be opened.
+D:\SI\cocn\src\qt\DakeCoinunits.h : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_af_ZA.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_ar.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_bg.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_bs.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_ca.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_ca_ES.ts : File could not be opened.
+D:\SI\cocn\test\functional\DakeCoin_cli.py : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_cs.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_cy.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_da.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_de.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_el_GR.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_en.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_eo.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_es.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_es_CL.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_et.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_eu_ES.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_fa.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_fa_IR.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_fi.ts : File could not be opened.
+D:\SI\cocn\build-aux\m4\DakeCoin_find_bdb48.m4 : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_fr.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_fr_CA.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_gu_IN.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_he.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_hi_IN.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_hr.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_hu.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_it.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_ja.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_la.ts : File could not be opened.
 D:\SI\cocn\doc\DakeCoin_logo_doxygen.png : File could not be opened.
 D:\SI\cocn\logo\doc\DakeCoin_logo_doxygen.png : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_lt.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_lv_LV.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_nb.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_nl.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_pl.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_pt_BR.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_pt_PT.ts : File could not be opened.
+D:\SI\cocn\build-aux\m4\DakeCoin_qt.m4 : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_ro_RO.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_ru.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_sk.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_sr.ts : File could not be opened.
+D:\SI\cocn\build-aux\m4\DakeCoin_subdir_to_include.m4 : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_sv.ts : File could not be opened.
+D:\SI\cocn\logo\icons\DakeCoin_testnet.ico : File could not be opened.
+D:\SI\cocn\logo\pixmaps\DakeCoin_testnet.ico : File could not be opened.
+D:\SI\cocn\share\pixmaps\DakeCoin_testnet.ico : File could not be opened.
+D:\SI\cocn\src\qt\res\icons\DakeCoin_testnet.ico : File could not be opened.
 D:\SI\cocn\logo\icons\DakeCoin_testnet.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\DakeCoin_testnet.png : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_th_TH.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_tr.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_uk.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_zh_CN.ts : File could not be opened.
+D:\SI\cocn\src\qt\locale\DakeCoin_zh_TW.ts : File could not be opened.
 D:\SI\cocn\logo\icons\debugwindow.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\debugwindow.png : File could not be opened.
 D:\SI\cocn\logo\icons\edit.png : File could not be opened.
@@ -101,6 +243,7 @@ D:\SI\cocn\logo\icons\history.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\history.png : File could not be opened.
 D:\SI\cocn\logo\icons\key.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\key.png : File could not be opened.
+D:\SI\cocn\libDakeCoinconsensus.pc.in : File could not be opened.
 D:\SI\cocn\logo\icons\lock_closed.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\lock_closed.png : File could not be opened.
 D:\SI\cocn\logo\icons\lock_open.png : File could not be opened.
@@ -115,6 +258,7 @@ D:\SI\cocn\logo\pixmaps\nsis-header.bmp : File could not be opened.
 D:\SI\cocn\share\pixmaps\nsis-header.bmp : File could not be opened.
 D:\SI\cocn\logo\pixmaps\nsis-wizard.bmp : File could not be opened.
 D:\SI\cocn\share\pixmaps\nsis-wizard.bmp : File could not be opened.
+D:\SI\cocn\contrib\init\org.DakeCoin.DakeCoind.plist : File could not be opened.
 D:\SI\cocn\logo\icons\overview.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\overview.png : File could not be opened.
 D:\SI\cocn\logo\icons\qrcode.png : File could not be opened.
@@ -125,6 +269,7 @@ D:\SI\cocn\logo\icons\receive.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\receive.png : File could not be opened.
 D:\SI\cocn\logo\icons\remove.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\remove.png : File could not be opened.
+D:\SI\cocn\src\test\containers\remove_DakeCoin_containers : File could not be opened.
 D:\SI\cocn\logo\images\controls\scroll-down.png : File could not be opened.
 D:\SI\cocn\src\qt\res\images\controls\scroll-down.png : File could not be opened.
 D:\SI\cocn\logo\images\controls\scroll-up.png : File could not be opened.
@@ -139,268 +284,7 @@ D:\SI\cocn\logo\images\splash_testnet.png : File could not be opened.
 D:\SI\cocn\src\qt\res\images\splash_testnet.png : File could not be opened.
 D:\SI\cocn\logo\icons\synced.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\synced.png : File could not be opened.
-D:\SI\cocn\logo\icons\toolbar.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\toolbar.png : File could not be opened.
-D:\SI\cocn\logo\icons\toolbar_testnet.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\toolbar_testnet.png : File could not be opened.
-D:\SI\cocn\logo\icons\transaction0.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\transaction0.png : File could not be opened.
-D:\SI\cocn\logo\icons\transaction2.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\transaction2.png : File could not be opened.
-D:\SI\cocn\logo\images\transparent-background.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\transparent-background.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_inout.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_inout.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_input.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_input.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_mined.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_mined.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_output.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_output.png : File could not be opened.
-D:\SI\cocn\logo\icons\verify.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\verify.png : File could not be opened.
----- DakeCoin Search Errors Encountered (129) ----
-The following 129 files could not be processed:
-D:\SI\cocn\logo\images\about.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\about.png : File could not be opened.
-D:\SI\cocn\logo\icons\add.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\add.png : File could not be opened.
-D:\SI\cocn\logo\icons\address-book.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\address-book.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\caret-down.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\caret-down.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\caret-up.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\caret-up.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock1.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock1.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock2.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock2.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock3.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock3.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock4.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock4.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock5.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock5.png : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.siproj : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_sym : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xab : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xad : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xm : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xsb : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xsd : File could not be opened.
-D:\SI\cocn\logo\icons\configure.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\configure.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect0_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect0_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect1_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect1_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect2_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect2_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect3_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect3_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect4_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect4_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\DakeCoin.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\DakeCoin.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin128.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin128.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin16.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin16.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin256.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin256.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin32.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin32.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin64.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin64.png : File could not be opened.
-D:\SI\cocn\doc\DakeCoin_logo_doxygen.png : File could not be opened.
-D:\SI\cocn\logo\doc\DakeCoin_logo_doxygen.png : File could not be opened.
-D:\SI\cocn\logo\icons\DakeCoin_testnet.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\DakeCoin_testnet.png : File could not be opened.
-D:\SI\cocn\logo\icons\debugwindow.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\debugwindow.png : File could not be opened.
-D:\SI\cocn\logo\icons\edit.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\edit.png : File could not be opened.
-D:\SI\cocn\logo\icons\editcopy.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\editcopy.png : File could not be opened.
-D:\SI\cocn\logo\icons\editpaste.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\editpaste.png : File could not be opened.
-D:\SI\cocn\logo\icons\export.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\export.png : File could not be opened.
-D:\SI\cocn\logo\icons\filesave.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\filesave.png : File could not be opened.
-D:\SI\cocn\logo\icons\history.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\history.png : File could not be opened.
-D:\SI\cocn\logo\icons\key.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\key.png : File could not be opened.
-D:\SI\cocn\logo\icons\lock_closed.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\lock_closed.png : File could not be opened.
-D:\SI\cocn\logo\icons\lock_open.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\lock_open.png : File could not be opened.
-D:\SI\cocn\logo\images\logo.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\logo.png : File could not be opened.
-D:\SI\cocn\logo\images\logomask.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\logomask.png : File could not be opened.
-D:\SI\cocn\logo\icons\notsynced.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\notsynced.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\nsis-header.bmp : File could not be opened.
-D:\SI\cocn\share\pixmaps\nsis-header.bmp : File could not be opened.
-D:\SI\cocn\logo\pixmaps\nsis-wizard.bmp : File could not be opened.
-D:\SI\cocn\share\pixmaps\nsis-wizard.bmp : File could not be opened.
-D:\SI\cocn\logo\icons\overview.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\overview.png : File could not be opened.
-D:\SI\cocn\logo\icons\qrcode.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\qrcode.png : File could not be opened.
-D:\SI\cocn\logo\icons\quit.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\quit.png : File could not be opened.
-D:\SI\cocn\logo\icons\receive.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\receive.png : File could not be opened.
-D:\SI\cocn\logo\icons\remove.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\remove.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\scroll-down.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\scroll-down.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\scroll-up.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\scroll-up.png : File could not be opened.
-D:\SI\cocn\logo\icons\send.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\send.png : File could not be opened.
-D:\SI\cocn\logo\icons\sign.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\sign.png : File could not be opened.
-D:\SI\cocn\logo\images\splash.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\splash.png : File could not be opened.
-D:\SI\cocn\logo\images\splash_testnet.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\splash_testnet.png : File could not be opened.
-D:\SI\cocn\logo\icons\synced.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\synced.png : File could not be opened.
-D:\SI\cocn\logo\icons\toolbar.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\toolbar.png : File could not be opened.
-D:\SI\cocn\logo\icons\toolbar_testnet.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\toolbar_testnet.png : File could not be opened.
-D:\SI\cocn\logo\icons\transaction0.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\transaction0.png : File could not be opened.
-D:\SI\cocn\logo\icons\transaction2.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\transaction2.png : File could not be opened.
-D:\SI\cocn\logo\images\transparent-background.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\transparent-background.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_inout.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_inout.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_input.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_input.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_mined.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_mined.png : File could not be opened.
-D:\SI\cocn\logo\icons\tx_output.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\tx_output.png : File could not be opened.
-D:\SI\cocn\logo\icons\verify.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\verify.png : File could not be opened.
----- 达克币 Search Errors Encountered (129) ----
-The following 129 files could not be processed:
-D:\SI\cocn\logo\images\about.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\about.png : File could not be opened.
-D:\SI\cocn\logo\icons\add.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\add.png : File could not be opened.
-D:\SI\cocn\logo\icons\address-book.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\address-book.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\caret-down.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\caret-down.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\caret-up.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\caret-up.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock1.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock1.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock2.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock2.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock3.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock3.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock4.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock4.png : File could not be opened.
-D:\SI\cocn\logo\icons\clock5.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\clock5.png : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.siproj : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_sym : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xab : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xad : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xm : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xsb : File could not be opened.
-D:\SI\cocn\cocn.si4project\cocn.sip_xsd : File could not be opened.
-D:\SI\cocn\logo\icons\configure.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\configure.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect0_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect0_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect1_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect1_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect2_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect2_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect3_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect3_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\connect4_16.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\connect4_16.png : File could not be opened.
-D:\SI\cocn\logo\icons\DakeCoin.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\DakeCoin.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin128.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin128.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin16.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin16.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin256.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin256.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin32.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin32.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\DakeCoin64.png : File could not be opened.
-D:\SI\cocn\share\pixmaps\DakeCoin64.png : File could not be opened.
-D:\SI\cocn\doc\DakeCoin_logo_doxygen.png : File could not be opened.
-D:\SI\cocn\logo\doc\DakeCoin_logo_doxygen.png : File could not be opened.
-D:\SI\cocn\logo\icons\DakeCoin_testnet.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\DakeCoin_testnet.png : File could not be opened.
-D:\SI\cocn\logo\icons\debugwindow.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\debugwindow.png : File could not be opened.
-D:\SI\cocn\logo\icons\edit.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\edit.png : File could not be opened.
-D:\SI\cocn\logo\icons\editcopy.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\editcopy.png : File could not be opened.
-D:\SI\cocn\logo\icons\editpaste.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\editpaste.png : File could not be opened.
-D:\SI\cocn\logo\icons\export.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\export.png : File could not be opened.
-D:\SI\cocn\logo\icons\filesave.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\filesave.png : File could not be opened.
-D:\SI\cocn\logo\icons\history.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\history.png : File could not be opened.
-D:\SI\cocn\logo\icons\key.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\key.png : File could not be opened.
-D:\SI\cocn\logo\icons\lock_closed.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\lock_closed.png : File could not be opened.
-D:\SI\cocn\logo\icons\lock_open.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\lock_open.png : File could not be opened.
-D:\SI\cocn\logo\images\logo.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\logo.png : File could not be opened.
-D:\SI\cocn\logo\images\logomask.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\logomask.png : File could not be opened.
-D:\SI\cocn\logo\icons\notsynced.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\notsynced.png : File could not be opened.
-D:\SI\cocn\logo\pixmaps\nsis-header.bmp : File could not be opened.
-D:\SI\cocn\share\pixmaps\nsis-header.bmp : File could not be opened.
-D:\SI\cocn\logo\pixmaps\nsis-wizard.bmp : File could not be opened.
-D:\SI\cocn\share\pixmaps\nsis-wizard.bmp : File could not be opened.
-D:\SI\cocn\logo\icons\overview.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\overview.png : File could not be opened.
-D:\SI\cocn\logo\icons\qrcode.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\qrcode.png : File could not be opened.
-D:\SI\cocn\logo\icons\quit.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\quit.png : File could not be opened.
-D:\SI\cocn\logo\icons\receive.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\receive.png : File could not be opened.
-D:\SI\cocn\logo\icons\remove.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\remove.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\scroll-down.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\scroll-down.png : File could not be opened.
-D:\SI\cocn\logo\images\controls\scroll-up.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\controls\scroll-up.png : File could not be opened.
-D:\SI\cocn\logo\icons\send.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\send.png : File could not be opened.
-D:\SI\cocn\logo\icons\sign.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\sign.png : File could not be opened.
-D:\SI\cocn\logo\images\splash.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\splash.png : File could not be opened.
-D:\SI\cocn\logo\images\splash_testnet.png : File could not be opened.
-D:\SI\cocn\src\qt\res\images\splash_testnet.png : File could not be opened.
-D:\SI\cocn\logo\icons\synced.png : File could not be opened.
-D:\SI\cocn\src\qt\res\icons\synced.png : File could not be opened.
+D:\SI\cocn\src\test\test_DakeCoin.cpp : File could not be opened.
 D:\SI\cocn\logo\icons\toolbar.png : File could not be opened.
 D:\SI\cocn\src\qt\res\icons\toolbar.png : File could not be opened.
 D:\SI\cocn\logo\icons\toolbar_testnet.png : File could not be opened.
