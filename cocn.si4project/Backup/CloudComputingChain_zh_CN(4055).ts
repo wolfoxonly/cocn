@@ -5,12 +5,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About CloudComputingChain</source>
-        <translation>关于云算链</translation>
+        <translation>关于运算链</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;CloudComputingChain&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;云算链&lt;/b&gt;版本</translation>
+        <translation>&lt;b&gt;运算链&lt;/b&gt;版本</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -68,7 +68,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
         <source>These are your CloudComputingChain addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>这是您用来收款的云算链地址。为了标记不同的资金来源，建议为每个付款人保留不同的收款地址。</translation>
+        <translation>这是您用来收款的运算链地址。为了标记不同的资金来源，建议为每个付款人保留不同的收款地址。</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -108,7 +108,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-44"/>
         <source>Verify a message to ensure it was signed with a specified CloudComputingChain address</source>
-        <translation>验证消息，确保消息是由指定的云算链地址签名过的。</translation>
+        <translation>验证消息，确保消息是由指定的运算链地址签名过的。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -123,7 +123,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
         <source>These are your CloudComputingChain addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是您用来付款的云算链地址。在付款前，请总是核实付款金额和收款地址。</translation>
+        <translation>这是您用来付款的运算链地址。在付款前，请总是核实付款金额和收款地址。</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -249,7 +249,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR DAKECOINS&lt;/b&gt;!</source>
-        <translation>警告：如果您加密了您的钱包，但是忘记了密码，你将会&lt;b&gt;丢失所有的云算链&lt;/b&gt;！</translation>
+        <translation>警告：如果您加密了您的钱包，但是忘记了密码，你将会&lt;b&gt;丢失所有的运算链&lt;/b&gt;！</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -276,7 +276,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-56"/>
         <source>CloudComputingChain will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your CloudComputingChains from being stolen by malware infecting your computer.</source>
-        <translation>将关闭软件以完成加密过程。 请您谨记：钱包加密并不是万能的，电脑中毒，您的云算链还是有可能丢失。</translation>
+        <translation>将关闭软件以完成加密过程。 请您谨记：钱包加密并不是万能的，电脑中毒，您的运算链还是有可能丢失。</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -375,7 +375,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+4"/>
         <source>Show information about CloudComputingChain</source>
-        <translation>显示云算链的相关信息</translation>
+        <translation>显示运算链的相关信息</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,7 +420,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-347"/>
         <source>Send coins to a CloudComputingChain address</source>
-        <translation>向一个云算链地址发送云算链</translation>
+        <translation>向一个运算链地址发送运算链</translation>
     </message>
     <message>
         <location line="+49"/>
@@ -456,7 +456,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="-165"/>
         <location line="+530"/>
         <source>CloudComputingChain</source>
-        <translation>云算链</translation>
+        <translation>运算链</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -481,7 +481,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+22"/>
         <source>&amp;About CloudComputingChain</source>
-        <translation>&amp;关于云算链</translation>
+        <translation>&amp;关于运算链</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -501,12 +501,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+7"/>
         <source>Sign messages with your CloudComputingChain addresses to prove you own them</source>
-        <translation>用云算链地址关联的私钥为消息签名，以证明您拥有这个云算链地址</translation>
+        <translation>用运算链地址关联的私钥为消息签名，以证明您拥有这个运算链地址</translation>
     </message>
     <message>
         <location line="+2"/>
         <source>Verify messages to ensure they were signed with specified CloudComputingChain addresses</source>
-        <translation>校验消息，确保该消息是由指定的云算链地址所有者签名的</translation>
+        <translation>校验消息，确保该消息是由指定的运算链地址所有者签名的</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -537,12 +537,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+47"/>
         <source>CloudComputingChain client</source>
-        <translation>云算链客户端</translation>
+        <translation>运算链客户端</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
         <source>%n active connection(s) to CloudComputingChain network</source>
-        <translation><numerusform>到云算链网络的连接共有%n条</numerusform></translation>
+        <translation><numerusform>到运算链网络的连接共有%n条</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -657,7 +657,7 @@ Address: %4
         <location line="-23"/>
         <location line="+23"/>
         <source>URI can not be parsed! This can be caused by an invalid CloudComputingChain address or malformed URI parameters.</source>
-        <translation>URI无法解析！原因可能是云算链地址不正确，或者URI参数错误。</translation>
+        <translation>URI无法解析！原因可能是运算链地址不正确，或者URI参数错误。</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -738,7 +738,7 @@ Address: %4
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid CloudComputingChain address.</source>
-        <translation>您输入的 &quot;%1&quot; 不是合法的云算链地址.</translation>
+        <translation>您输入的 &quot;%1&quot; 不是合法的运算链地址.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -821,7 +821,7 @@ Address: %4
     <message>
         <location line="+31"/>
         <source>Automatically start CloudComputingChain after logging in to the system.</source>
-        <translation>登录系统后自动开启云算链客户端</translation>
+        <translation>登录系统后自动开启运算链客户端</translation>
     </message>
     <message>
         <location line="+46"/>
@@ -851,7 +851,7 @@ Address: %4
     <message>
         <location line="+6"/>
         <source>Automatically open the CloudComputingChain client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动在路由器中打开云算链端口。只有当您的路由器开启 UPnP 选项时此功能才有效。</translation>
+        <translation>自动在路由器中打开运算链端口。只有当您的路由器开启 UPnP 选项时此功能才有效。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -861,7 +861,7 @@ Address: %4
     <message>
         <location line="+7"/>
         <source>Connect to the CloudComputingChain network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>通过代理服务器连接云算链网络(例如：通过Tor连接)</translation>
+        <translation>通过代理服务器连接运算链网络(例如：通过Tor连接)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -941,22 +941,22 @@ Address: %4
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>&amp;云算链金额单位:</translation>
+        <translation>&amp;运算链金额单位:</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择云算链单位。</translation>
+        <translation>选择运算链单位。</translation>
     </message>
     <message>
         <location line="+9"/>
         <source>Whether to show CloudComputingChain addresses in the transaction list or not.</source>
-        <translation>是否需要在交易清单中显示云算链地址。</translation>
+        <translation>是否需要在交易清单中显示运算链地址。</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>在交易清单中&amp;显示云算链地址</translation>
+        <translation>在交易清单中&amp;显示运算链地址</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1022,7 +1022,7 @@ Address: %4
         <location line="+50"/>
         <location line="+166"/>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CloudComputingChain network after a connection is established, but this process has not completed yet.</source>
-        <translation>现在显示的消息可能是过期的. 在连接上云算链网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成.</translation>
+        <translation>现在显示的消息可能是过期的. 在连接上运算链网络节点后，您的钱包将自动与网络同步，但是这个过程还没有完成.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1076,7 +1076,7 @@ Address: %4
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start CloudComputingChain: click-to-pay handler</source>
-        <translation>暂时无法启动云算链：点击支付功能</translation>
+        <translation>暂时无法启动运算链：点击支付功能</translation>
     </message>
 </context>
 <context>
@@ -1191,7 +1191,7 @@ Address: %4
     <message>
         <location line="+23"/>
         <source>On testnet</source>
-        <translation>当前为云算链测试网络</translation>
+        <translation>当前为运算链测试网络</translation>
     </message>
     <message>
         <location line="+23"/>
@@ -1246,12 +1246,12 @@ Address: %4
     <message>
         <location line="-104"/>
         <source>CloudComputingChain - Debug window</source>
-        <translation>云算链 - 调试窗口</translation>
+        <translation>运算链 - 调试窗口</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>CloudComputingChain Core</source>
-        <translation>云算链核心</translation>
+        <translation>运算链核心</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1391,7 +1391,7 @@ Address: %4
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>错误: 交易被拒绝. 如果您使用的是备份钱包，可能存在两个钱包不同步的情况，另一个钱包中的云算链已经被使用，但本地的这个钱包尚没有记录。</translation>
+        <translation>错误: 交易被拒绝. 如果您使用的是备份钱包，可能存在两个钱包不同步的情况，另一个钱包中的运算链已经被使用，但本地的这个钱包尚没有记录。</translation>
     </message>
 </context>
 <context>
@@ -1455,7 +1455,7 @@ Address: %4
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a CloudComputingChain address</source>
-        <translation>请输入云算链地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>请输入运算链地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1556,7 +1556,7 @@ Address: %4
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified CloudComputingChain address</source>
-        <translation>验证消息，确保消息是由指定的云算链地址签名过的。</translation>
+        <translation>验证消息，确保消息是由指定的运算链地址签名过的。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1572,7 +1572,7 @@ Address: %4
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
         <source>Enter a CloudComputingChain address</source>
-        <translation>请输入云算链地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+        <translation>请输入运算链地址 (例如: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1582,7 +1582,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Enter CloudComputingChain signature</source>
-        <translation>输入云算链签名</translation>
+        <translation>输入运算链签名</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1790,7 +1790,7 @@ Address: %4
     <message>
         <location line="+3"/>
         <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>新挖出的云算链必须等确120个确认才能使用。您生产出的数据块，将被广播到全网并添加到数据块链。如果入链失败，状态将变为“未被接受”，意味着您的数据块竞争失败，挖出的云算链将不能使用。当某个节点先于你几秒生产出新的数据块，这种情况会偶尔发生。</translation>
+        <translation>新挖出的运算链必须等确120个确认才能使用。您生产出的数据块，将被广播到全网并添加到数据块链。如果入链失败，状态将变为“未被接受”，意味着您的数据块竞争失败，挖出的运算链将不能使用。当某个节点先于你几秒生产出新的数据块，这种情况会偶尔发生。</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1951,7 +1951,7 @@ Address: %4
     <message>
         <location line="+2"/>
         <source>Date and time that the transaction was received.</source>
-        <translation>接收云算链的时间</translation>
+        <translation>接收运算链的时间</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2143,7 +2143,7 @@ Address: %4
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>发送云算链</translation>
+        <translation>发送运算链</translation>
     </message>
 </context>
 <context>
@@ -2194,7 +2194,7 @@ Address: %4
     <message>
         <location filename="../CloudComputingChainstrings.cpp" line="+94"/>
         <source>CloudComputingChain version</source>
-        <translation>云算链版本</translation>
+        <translation>运算链版本</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2355,7 +2355,7 @@ rpcpassword=%s
     <message>
         <location line="+3"/>
         <source>Error: The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>错误：该交易被拒绝！发生这种错误的原因可能是：钱包中的云算链已经被用掉，有可能您复制了wallet.dat钱包文件，然后用复制的钱包文件支付了云算链，但是这个钱包文件中没有记录。</translation>
+        <translation>错误：该交易被拒绝！发生这种错误的原因可能是：钱包中的运算链已经被用掉，有可能您复制了wallet.dat钱包文件，然后用复制的钱包文件支付了运算链，但是这个钱包文件中没有记录。</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2395,7 +2395,7 @@ rpcpassword=%s
     <message>
         <location line="+3"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong CloudComputingChain will not work properly.</source>
-        <translation>警告：请检查电脑的日期时间设置是否正确！时间错误可能会导致云算链客户端运行异常。</translation>
+        <translation>警告：请检查电脑的日期时间设置是否正确！时间错误可能会导致运算链客户端运行异常。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2910,7 +2910,7 @@ rpcpassword=%s
     <message>
         <location line="-25"/>
         <source>Unable to bind to %s on this computer. CloudComputingChain is probably already running.</source>
-        <translation>无法在本机绑定 %s 端口 . 云算链客户端软件可能已经在运行.</translation>
+        <translation>无法在本机绑定 %s 端口 . 运算链客户端软件可能已经在运行.</translation>
     </message>
     <message>
         <location line="+64"/>

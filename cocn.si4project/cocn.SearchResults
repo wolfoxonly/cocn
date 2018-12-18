@@ -1,58 +1,50 @@
----- coingo Matches (53 in 15 files) ----
-CAddrMan::Good_ in addrman.cpp (src) :     printf("Moving %s to tried\n", addr.ToString().c_str());//coingo.vip,此处校验节点
-CAddrMan in addrman.h (src) :     bool Add(const std::vector<CAddress> &vAddr, const CNetAddr& source, int64 nTimePenalty = 0)//coingo.vip决定是否加成功
-Checkpoints in checkpoints.cpp (src) :        ( 0, hashGenesisBlockOfficial )//<coingo.vip>
-checkpointsync.cpp (src) line 72 : // const std::string CSyncCheckpoint::strMainPubKey = "04c0c707c28533fd5c9f79d2d3a2d80dff259ad8f915241cd14608fb9bc07c74830efe8438f2b272a866b4af5e0c2cc2a9909972aefbd976937e39f46bb38c277c";<coingo.vip>
-ClientModel::getLastBlockDate in clientmodel.cpp (src\qt) :         return QDateTime::fromTime_t(1231006505); // Genesis block's time<coingo.vip>
-clientversion.h (src) line 31 : //coingo.vip
-CloudComputingChainUnits::name in CloudComputingChainunits (2).cpp (src\qt) :     case BTC: return QString("COC");//coingo.vip定义名字
-CloudComputingChainUnits::name in CloudComputingChainunits.cpp (src\qt) :     case BTC: return QString("COC");//coingo.vip定义名字
-kernel.cpp (src) line 14 : unsigned int nProtocolV03SwitchTime     = 1545019186;// 1363800000;<coingo.vip>
-kernel.cpp (src) line 17 : unsigned int nProtocolV04SwitchTime     = 1546019186;//1399300000;<coingo.vip>
-kernel.cpp (src) line 20 : unsigned int nProtocolV05SwitchTime     = 1650504755;// 1461700000;<coingo.vip>
-CTxOut::IsDust in main.cpp (src) :     return ((nValue*1000.0)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < CTransaction::nMinRelayTxFee);//fixed coingo.vip
-GetProofOfWorkReward in main.cpp (src) :     return 256.0 * COIN;//<coingo.vip>定义pow奖励
-main.cpp (src) line 1235 : int64 GetProofOfStakeReward(int64 nCoinAge,int64 balance)//<coingo.vip>
-GetProofOfStakeReward in main.cpp (src) :     int year =  std::ceil(pindexBest->nHeight / (24 * 60 / 2 * 365));//coingo.vip利率衰减部分
-GetProofOfStakeReward in main.cpp (src) :     float rate = 40*pow(0.6,year);//coingo.vip
-GetProofOfStakeReward in main.cpp (src) :     int64 nSubsidy = ::ceill(( rate / 100.0 ) * nCoinAge / 365) * COIN;//coingo.vip
-CBlock::CheckBlock in main.cpp (src) :     // Check coinbase reward coingo.vip
-InitBlockIndex in main.cpp (src) :         txNew.nTime = 1545019100;//<coingo.vip>
-InitBlockIndex in main.cpp (src) :         block.nTime    = 1545019100;// <coingo.vip>
-InitBlockIndex in main.cpp (src) :         block.nNonce = ByteReverse(13550653);//<coingo.vip>校验
-InitBlockIndex in main.cpp (src) :          while(true)//<coingo.vip>校验
-InitBlockIndex in main.cpp (src) :                       printf("nNonceFound 11111111 coingo.vip:%d \n" ,nNonceFound);
-InitBlockIndex in main.cpp (src) :                       printf("GetHash 222222222 coingo.vip:%s\n" ,block.GetHash().ToString().c_str());
-InitBlockIndex in main.cpp (src) :         printf("block.nBits 2222222222222222222 coingo.vip:%d \n" ,block.nBits);
-InitBlockIndex in main.cpp (src) :         assert(block.hashMerkleRoot == uint256("0xcfdb867b287ada503837c15b1a4da12e0965ca58fa6c8c07b9abc86b76d93580"));//<coingo.vip>校验
-InitBlockIndex in main.cpp (src) :      //   assert(hash == hashGenesisBlock);//<coingo.vip>
-InitBlockIndex in main.cpp (src) :             assert(block.CheckBlock(state));//<coingo.vip>
-CreateNewBlock in main.cpp (src) :                 pblock->vtx[0].vout[0].nValue = 200000000 * COIN;//首块产量<coingo.vip>
-CreateNewBlock in main.cpp (src) :              pblock->vtx[0].vout[0].nValue = reward * pow(0.6,year);//<coingo.vip>
-CloudComputingChainMiner in main.cpp (src) :         {//大于1000000000不让用pow了<coingo.vip>
-main.h (src) line 62 : // static const int64 MAX_MONEY = 2000000000 * COIN;<coingo.vip>
-main.h (src) line 63 : static const int64 MAX_MONEY = 1000000000 * COIN;//<coingo.vip>
-main.h (src) line 65 : static const int64 MIN_TX_FEE = 0 *COIN;//<coingo.vip>改最小转账限制
-main.h (src) line 66 : static const int64 MAX_TX_FEE = 100 *COIN;//<coingo.vip>改最小转账限制
-main.h (src) line 67 : static const int64 MIN_RELAY_TX_FEE = 0 *COIN;//<coingo.vip>改最小限制
-main.h (src) line 68 : static const int64 MAX_MINT_PROOF_OF_WORK = 1200000000 * COIN;//<coingo.vip>最大挖到的利息值
-main.h (src) line 69 : static const int64 MIN_TXOUT_AMOUNT = 0 *COIN;//<coingo.vip>改最小限制
-main.h (src) line 74 : static const int STAKE_MIN_AGE = 60 * 60 * 24 * 14; // minimum age for coin age<coingo.vip>
-main.h (src) line 76 : static const int STAKE_MAX_AGE = 60 * 60 * 24 * 365 * 4; // stake age of full weight 4年 <coingo.vip>
-main.h (src) line 86 : static const uint256 hashGenesisBlockOfficial("0x000000d80ec5afd2f398a352b8293093760acf14884a164be5b3b0a9995181ab");//<coingo.vip>校验
-net.cpp (src) line 352 : bool GetMyExternalIP(CNetAddr& ipRet)//<coingo.vip>
-ConnectNode in net.cpp (src) :         pszDest ? pszDest : addrConnect.ToString().c_str());//coingo.vip,ljn校验节点
-ConnectNode in net.cpp (src) : 			printf("IsLocal(addrConnect) judge fail");//coingo.vip,ljn
-ConnectNode in net.cpp (src) :     printf("trying connection %s lastseen=%.1fhrs\n",//coingo.vip,ljn校验节点
-net.cpp (src) line 1184 : //<coingo.vip>默认节点
-protocol.h (src) line 18 : #define PPCOIN_PORT  9966//<coingo.vip>端口号
-util.cpp (src) line 247 : int OutputDebugStringF(const char* pszFormat, ...)//<coingo.vip>
-util.cpp (src) line 322 : ///delete logo<coingo.vip>
-util.cpp (src) line 1173 :               ///coingo.vip add below      
-util.cpp (src) line 1189 :                     ///coingo.vip add above
-wallet.cpp (src) line 1288 :                 // CloudComputingChain: sub-cent change is moved to fee <coingo.vip>
-wallet.cpp (src) line 1323 :                     // add the dust to the fee.<coingo.vip>
----- coingo Search Errors Encountered (130) ----
+---- Available Matches (46 in 15 files) ----
+BOOST_AUTO_TEST_SUITE in bignum_tests.cpp (src\test) : // Available at: http://embed.cs.utah.edu/ioc/
+test.functional.bumpfee.test_unconfirmed_not_spendable in bumpfee.py (test\functional) :     # due to the replaces_txid check in CWallet::AvailableCoins
+test.functional.bumpfee.test_unconfirmed_not_spendable in bumpfee.py (test\functional) :     # CWallet::AvailableCoins
+CloudComputingChain_en.ts (src\qt\locale) line 1549 :         <source>Available:</source>
+main.cpp (src) line 1502 :     assert(coins.IsAvailable(input.prevout.n));
+main.cpp (src) line 1563 :             if (!coins.IsAvailable(prevout.n))
+main.cpp (src) line 1756 :                 if (coins.IsAvailable(out.n))
+main.cpp (src) line 3098 :     uint64 nFreeBytesAvailable = filesystem::space(GetDataDir()).available;
+main.cpp (src) line 3101 :     if (nFreeBytesAvailable < nMinDiskSpace + nAdditionalBytes)
+CCoins in main.h (src) :     bool IsAvailable(unsigned int nPos) const {
+overviewpage.ui (src\qt\forms) line 104 :                      <string>Available:</string>
+PaymentServer::handleURIConnection in paymentserver.cpp (src\qt) :     while (clientConnection->bytesAvailable() < (int)sizeof(quint32))
+PaymentServer::handleURIConnection in paymentserver.cpp (src\qt) :     if (clientConnection->bytesAvailable() < (int)sizeof(quint16)) {
+release-notes-0.13.0.md (doc\release-notes) line 578 : - #7649 `4900641` Prevent multiple calls to CWallet::AvailableCoins (promag)
+release-notes-0.9.2.1.md (doc\release-notes) line 95 : - Make GetAvailableCredit run GetHash() only once per transaction (performance improvement)
+release-notes-0.9.2.md (doc\release-notes) line 95 : - Make GetAvailableCredit run GetHash() only once per transaction (performance improvement)
+release-notes-0.9.3.md (doc\release-notes) line 67 : - AvailableCoins: acquire cs_main mutex
+listunspent in rpcrawtransaction.cpp (src) :     pwalletMain->AvailableCoins(vecOutputs, GetTime(), false);
+signrawtransaction in rpcrawtransaction.cpp (src) :                 if (coins.IsAvailable(nOut) && coins.vout[nOut].scriptPubKey != scriptPubKey) {
+signrawtransaction in rpcrawtransaction.cpp (src) :         if (!view.GetCoins(txin.prevout.hash, coins) || !coins.IsAvailable(txin.prevout.n))
+wallet.cpp (src) line 954 :            printf("GetBalance() GetAvailableCredit=%ld\n", pcoin->GetAvailableCredit() );
+wallet.cpp (src) line 957 :                 nTotal += pcoin->GetAvailableCredit();
+wallet.cpp (src) line 973 :                 nTotal += pcoin->GetAvailableCredit();
+wallet.cpp (src) line 1008 : void CWallet::AvailableCoins(std::vector<COutput>& vCoins, unsigned int nSpendTime, bool fOnlyConfirmed, const CCoinControl *coinControl) const
+wallet.cpp (src) line 1191 :     AvailableCoins(vCoins, nSpendTime, true, coinControl);
+wallet.cpp (src) line 2007 :             if (IsMine(pcoin->vout[n]) && pcoin->IsSpent(n) && coins.IsAvailable(n))
+wallet.cpp (src) line 2019 :             else if (IsMine(pcoin->vout[n]) && !pcoin->IsSpent(n) && !coins.IsAvailable(n))
+CWallet in wallet.h (src) :     void AvailableCoins(std::vector<COutput>& vCoins, unsigned int nSpendTime, bool fOnlyConfirmed = true, const CCoinControl *coinControl=NULL) const;
+CWalletTx in wallet.h (src) :     mutable bool fAvailableCreditCached;
+CWalletTx in wallet.h (src) :     mutable int64 nAvailableCreditCached;
+CWalletTx::Init in wallet.h (src) :         fAvailableCreditCached = false;
+CWalletTx::Init in wallet.h (src) :         nAvailableCreditCached = 0;
+CWalletTx in wallet.h (src) :                 fAvailableCreditCached = false;
+CWalletTx in wallet.h (src) :         fAvailableCreditCached = false;
+CWalletTx in wallet.h (src) :             fAvailableCreditCached = false;
+CWalletTx in wallet.h (src) :             fAvailableCreditCached = false;
+CWalletTx in wallet.h (src) :     int64 GetAvailableCredit(bool fUseCache=true) const
+CWalletTx in wallet.h (src) :         if (fUseCache && fAvailableCreditCached)
+CWalletTx in wallet.h (src) :             return nAvailableCreditCached;
+CWalletTx in wallet.h (src) :                     throw std::runtime_error("CWalletTx::GetAvailableCredit() : value out of range");
+CWalletTx in wallet.h (src) :         nAvailableCreditCached = nCredit;
+CWalletTx in wallet.h (src) :         fAvailableCreditCached = true;
+WalletModel::sendCoins in walletmodel.cpp (src\qt) :     wallet->AvailableCoins(vCoins, GetTime(), true, coinControl);
+walletmodel.cpp (src\qt) line 429 : // AvailableCoins + LockedCoins grouped by wallet address (put change in one group with wallet address)
+WalletModel::listCoins in walletmodel.cpp (src\qt) :     wallet->AvailableCoins(vCoins, GetAdjustedTime());
+---- Available Search Errors Encountered (130) ----
 The following 130 files could not be processed:
 D:\SI\cocn\logo\images\about.png : File could not be opened.
 D:\SI\cocn\src\qt\res\images\about.png : File could not be opened.
